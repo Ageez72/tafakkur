@@ -3,7 +3,25 @@ import { useEffect } from "react";
 import Layout from "@/components/layout/Layout";
 import AboutImageSlider from "@/components/slider/AboutImageSlider";
 import ContactForm from "@/components/sections/ContactForm";
-const imageArr = ["https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/slide1.jpg", "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/slide2.jpg", "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/slide1.jpg", "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/slide3.jpg", "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/slide4.jpg", "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/slide2.jpg"]
+const imageArr = [
+    "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/اجتماع-فريق-عمل-تفكر.jpg",
+    "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/ورشة-عمل-قيادة-النساء-تفكر.jpg",
+    "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/جلسة-تعاون-فريق-تفكر.jpg",
+    "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/ندوة-في-قاعة-تفكر.jpg",
+    "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/اجتماع-اداري-تفكر.jpg",
+    "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/طلاب-في-الفصل-تفكر.jpg",
+    "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/فريق-في-معرض-كتب-تفكر.jpg",
+    "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/حفل-توزيع-شهادات-تفكر.jpg",
+    "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/صورة-فريق-تفكر.jpg",
+    "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/حفل-توقيع-كتب-تفكر.jpg",
+    "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/حضور-ورشة-عمل-تفكر.jpg",
+    "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/انشطة-للاطفال-تفكر.jpg",
+    "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/توزيع-شهادات-ورشة-تفكر.jpg",
+    "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/قراءة-للاطفال-تفكر.jpg",
+    "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/حفل-اجتماع-تفكر.jpg",
+    "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/ندوة-حضور-تفكر.jpg",
+    "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/مدارس-نجمة-الفريد-مع-فريق-تفكر.jpg"
+  ];
 
 export default function WhoWeAre() {
     useEffect(()=>{
@@ -33,7 +51,7 @@ export default function WhoWeAre() {
                             <div className="col-12 col-lg-5 mt-lg-0 mt-5">
                                 <h2 className="head-blue mb-3">عن تفكر</h2>
                                 <p>تفكر مؤسسة بحث وتدريب وتطوير علمي تربوي تأسست عام <span className="en-txt">2008</span> في الأردن، تسعى لبناء الإنسان الأخلاقي المبدع القادر على صناعة الحضارة وتحقيق النهضة، وإعداد المحاضن التربوية اللازمة لتحقيق ذلك.</p>
-                                <a className="wow fadeInUp d-inline-block hover-btn mt-3" href="tel:+96279727220">
+                                <a className="wow fadeInUp d-inline-block hover-btn mt-3" href="/contact-us">
                                     <i className="fa-regular fa-envelope me-3"></i>
                                     اتصل بنا
                                 </a>

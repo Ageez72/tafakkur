@@ -15,7 +15,7 @@ export default function HomeAbout({data}) {
                         <Link href='/about-us' className='hover-btn me-3'>
                             المزيد عن تفكر
                         </Link>
-                        <Link href='#' target='_blank' className='hover-outlined-btn '>انضم لشركائنا</Link>
+                        <Link href='/contact-us' target='_blank' className='hover-outlined-btn '>انضم لشركائنا</Link>
                     </div>
                 </div>
             </div>

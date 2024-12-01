@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import VideoPopup from "../elements/VideoPopup";
 import { getYouTubeVideoID } from "@/helpers";
 
@@ -15,7 +16,7 @@ export default function AnosLevelsEffects({data}) {
                             <div className="col-12 col-md-6 col-lg-4 my-3 col-wrapper">
                                 <div className="level-side">
                                     <div className="card-avatar">
-                                        <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/1.jpg" alt="avatar image" />
+                                        <Image src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/1.jpg" alt="avatar image" />
                                     </div>
                                     <div className="card-hover-cover">
                                         <h3 className="white-txt">المستوى الأول</h3>
@@ -31,7 +32,7 @@ export default function AnosLevelsEffects({data}) {
                             <div className="col-12 col-md-6 col-lg-4 my-3 col-wrapper">
                                 <div className="level-side">
                                     <div className="card-avatar">
-                                        <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/2.jpg" alt="avatar image" />
+                                        <Image src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/2.jpg" alt="avatar image" />
                                     </div>
                                     <div className="card-hover-cover">
                                         <h3 className="white-txt">المستوى الثاني</h3>
@@ -43,7 +44,7 @@ export default function AnosLevelsEffects({data}) {
                             <div className="col-12 col-md-6 col-lg-4 my-3 col-wrapper">
                                 <div className="level-side">
                                     <div className="card-avatar">
-                                        <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/3.jpg" alt="avatar image" />
+                                        <Image src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/3.jpg" alt="avatar image" />
                                     </div>
                                     <div className="card-hover-cover">
                                         <h3 className="white-txt">المستوى الثالث</h3>

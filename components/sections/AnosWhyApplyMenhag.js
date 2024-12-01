@@ -33,7 +33,7 @@ export default function AnosWhyApplyMenhag({data}) {
 
                                         <div className="action-buttons d-flex align-items-center flex-wrap">
                                             <VideoPopup customClasses="hover-outlined-btn d-inline-block py-1 me-3 mt-3" videoTitleIconFirsts="fa-play" title={"شاهد الفيديو"} style={2} videoId={data && data[0]?.video && getYouTubeVideoID(data[0].video)} />
-                                            <Link className="hover-btn d-inline-block py-1 mt-3" href="#">
+                                            <Link className="hover-btn d-inline-block py-1 mt-3" href="https://forms.zohopublic.com/tafakkur/form/Untitled19/formperma/ZwPaVDv5Ld5kLqH7iN28BBABGeQ4CqON5AF5LrFYrY4">
                                                 طبق في مؤسستك
                                             </Link>
                                         </div>

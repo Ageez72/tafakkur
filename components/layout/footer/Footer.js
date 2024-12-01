@@ -81,7 +81,7 @@ export default function Footer1() {
                   </div>
                   <ul className="list-area">
                     <li>
-                      <Link href="/tafakkur-training">
+                      <Link href="/tafakkur-curriculum">
                         <i className="fa-solid fa-chevron-right" />
                         تفكر في التعليم
                       </Link>

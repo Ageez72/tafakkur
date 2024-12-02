@@ -42,7 +42,7 @@ export default function HomeFamilyServices() {
                                     يقدم برامج تدريبية متطورة لبناء الإنسان، ترتكز إلى أحدث نظريات الدماغ وعلم الأعصاب، وتسند إلى علم النفس الإ
                                     سلامي، لفهم وتطوير أعمق لتفكير ومشاعر وسلوك الإنسان، استفاد من البرامج التدريبية آلاف الأشخاص حول العالم.
                                 </p>
-                                <Link href="/tafakkur-publishers/products" className='d-inline-flex align-items-center'>
+                                <Link href="/tafakkur-publishers" className='d-inline-flex align-items-center'>
                                     اطلع على الإصدارات
                                     <i className="fa-solid fa-arrow-left-long ms-2"></i>
                                 </Link>

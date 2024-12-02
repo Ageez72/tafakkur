@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Preloader from "@/components/elements/Preloader";
+import { wrapNumbersInSpan } from "@/helpers";
 
 const swiperOptions = {
     modules: [Pagination, Autoplay],
@@ -49,6 +50,7 @@ export default function HomeHeroSlider({ data }) {
             // Preload images before updating state
             preloadImages(images)
                 .then(() => {
+                    wrapNumbersInSpan()
                     setImagesLoaded(true);
                     setBackgroundImage(images[0]); // Set initial background
                     setLoader(false);

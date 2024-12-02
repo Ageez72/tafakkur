@@ -25,8 +25,7 @@ export default function TafakuurNewsListing({ data, title, noPaddingBottom }) {
                                                         <h6>
                                                             <span>{news?.date && formatDate(news?.date)}</span>
                                                         </h6>
-                                                        <p className="card-text line-clamp line-2">{news?.desc}</p>
-                                                        <Link href={`/news/${news.slug}`} className="read-more">اقرأ المزيد</Link>
+                                                        <div className="card-text line-clamp line-2" dangerouslySetInnerHTML={{__html: news?.desc}} />                                                        <Link href={`/news/${news.slug}`} className="read-more">اقرأ المزيد</Link>
                                                     </div>
                                                 </div>
                                             </div>

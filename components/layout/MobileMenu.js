@@ -41,9 +41,9 @@ export default function MobileMenu() {
               <li className={isActive("/news")}>
                 <Link href="/news">{translation.menu.news}</Link>
               </li>
-              <li className={isActive("/articles")}>
+              {/* <li className={isActive("/articles")}>
                 <Link href="/articles">{translation.menu.articles}</Link>
-              </li>
+              </li> */}
               <li className={isActive("/tafakkur-curriculum")}><Link href="/tafakkur-curriculum">{translation.menu.thinkAnos}</Link></li>
               <li className={isActive("/our-clients")}>
                 <Link href="/our-clients">{translation.menu.appliedOrgnizations}</Link>

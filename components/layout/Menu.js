@@ -26,9 +26,9 @@ export default function Menu() {
         <li className={isActive("/news")}>
           <Link href="/news">{translation.menu.news}</Link>
         </li>
-        <li className={isActive("/articles")}>
+        {/* <li className={isActive("/articles")}>
           <Link href="/articles">{translation.menu.articles}</Link>
-        </li>
+        </li> */}
         <li>
           <Link href="/" style={{ pointerEvents: "none" }}>{translation.menu.orgnizationsServices}<i className="fas fa-angle-down ps-1"></i></Link>
           <ul className="submenu">

@@ -187,6 +187,9 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
+body [dir=ltr] {
+  font-family: "Myriad Pro" !important;
+}
 
 ul {
   padding: 0;
@@ -3652,7 +3655,8 @@ input.main-search-input::placeholder {
   color: #afaebb;
   margin-bottom: 8px;
 }
-.training-new-wrapper .card .card-body p {
+.training-new-wrapper .card .card-body p, .training-new-wrapper .card .card-body li {
+  font-family: "GE Flow";
   font-size: 1.1875rem;
   color: #afaebb;
   margin-bottom: 8px;
@@ -3798,9 +3802,9 @@ input.main-search-input::placeholder {
   text-align: left;
 }
 #contact-form button {
-  padding: 10px 40px;
+  padding: 8px 25px;
   border-radius: 10px;
-  font-size: 1rem;
+  font-size: 1.1875rem;
 }
 
 .message-box {

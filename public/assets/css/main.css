@@ -5391,8 +5391,6 @@ p {
   text-align: center;
   border-radius: 10px;
   font-weight: 900;
-  filter: drop-shadow(-0.776px 2.898px 5px rgba(0, 0, 0, 0.09));
-  background-color: #ffffff;
   position: relative;
   z-index: 2;
   margin: auto;

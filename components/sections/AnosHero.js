@@ -74,7 +74,7 @@ export default function AnosHero() {
                                                                 width={352}
                                                                 height={56}
                                                                 alt="image"
-                                                                className="w-100 object-fit border-radius-8"
+                                                                className="w-100 h-100 object-fit border-radius-8"
                                                             />
                                                         </h5>
                                                     </div>
@@ -135,7 +135,7 @@ export default function AnosHero() {
                                                                 width={352}
                                                                 height={56}
                                                                 alt="image"
-                                                                className="w-100 object-fit border-radius-8"
+                                                                className="w-100 h-100 object-fit border-radius-8"
                                                             />
                                                         </h5>
                                                     </div>
@@ -196,7 +196,7 @@ export default function AnosHero() {
                                                                 width={352}
                                                                 height={56}
                                                                 alt="image"
-                                                                className="w-100 object-fit border-radius-8"
+                                                                className="w-100 h-100 object-fit border-radius-8"
                                                             />
                                                         </h5>
                                                     </div>
@@ -257,7 +257,7 @@ export default function AnosHero() {
                                                                 width={352}
                                                                 height={56}
                                                                 alt="image"
-                                                                className="w-100 object-fit border-radius-8"
+                                                                className="w-100 h-100 object-fit border-radius-8"
                                                             />
                                                         </h5>
                                                     </div>
@@ -318,7 +318,7 @@ export default function AnosHero() {
                                                                 width={352}
                                                                 height={56}
                                                                 alt="image"
-                                                                className="w-100 object-fit border-radius-8"
+                                                                className="w-100 h-100 object-fit border-radius-8"
                                                             />
                                                         </h5>
                                                     </div>
@@ -379,7 +379,7 @@ export default function AnosHero() {
                                                                 width={352}
                                                                 height={56}
                                                                 alt="image"
-                                                                className="w-100 object-fit border-radius-8"
+                                                                className="w-100 h-100 object-fit border-radius-8"
                                                             />
                                                         </h5>
                                                     </div>

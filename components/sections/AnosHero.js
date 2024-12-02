@@ -7,7 +7,7 @@ import { useAppContext } from "@/context/AppContext";
 import Image from "next/image";
 
 const swiperOptions = {
-    modules: [EffectFade],
+    modules: [Autoplay, EffectFade],
     effect: 'fade',  // Ensure fade effect is enabled
     slidesPerView: 1,
     spaceBetween: 0,

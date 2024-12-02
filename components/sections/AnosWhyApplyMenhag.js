@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import VideoPopup from "../elements/VideoPopup";
 import { getYouTubeVideoID } from "@/helpers";
-import Image from "next/image";
 export default function AnosWhyApplyMenhag({ data }) {
     return (
         <>

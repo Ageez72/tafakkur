@@ -105,7 +105,7 @@ export default function AnosLevelsEffects({ data }) {
                                         </a>
                                     </div>
                                 </div>
-                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>

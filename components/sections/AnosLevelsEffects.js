@@ -78,12 +78,12 @@ export default function AnosLevelsEffects({ data }) {
                             <div className="col-12 col-md-6 col-lg-4 my-3 col-wrapper">
                                 <div className="level-side">
                                     <div className="card-avatar">
-                                        <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/6.jpg" alt="avatar image" />
+                                        <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/تفكر-مع-انوس-انجليزي.png" alt="avatar image" />
                                     </div>
                                     <div className="card-hover-cover">
-                                        <h3 className="white-txt">المستوى السادس</h3>
-                                        <h3 className="white-txt my-3">نبني حضارتنا</h3>
-                                        <p className="white-txt">قريباً</p>
+                                        <h3 className="white-txt">المستويات الخمس</h3>
+                                        <h3 className="white-txt my-3">باللغة الإنجليزية</h3>
+                                        <p className="white-txt">متاحة الآن</p>
                                     </div>
                                 </div>
                             </div>
@@ -96,11 +96,11 @@ export default function AnosLevelsEffects({ data }) {
                                 </div>
                                 <div className="col-12 col-md-6">
                                     <div className="action-buttons d-flex align-items-center justify-content-center flex-wrap">
-                                        <a className="hover-outlined-btn d-inline-block py-1 me-3 mt-3" href="link/to/your/download/file" download>
+                                        <a className="hover-outlined-btn d-inline-block py-1 me-3 mt-3"  href="https://forms.zohopublic.com/tafakkur/form/Untitled19/formperma/ZwPaVDv5Ld5kLqH7iN28BBABGeQ4CqON5AF5LrFYrY4">
                                             <i className="fa-solid fa-download me-2"></i>
                                             حمل البروشور التعريفي
                                         </a>
-                                        <a className="hover-btn d-inline-block py-1 mt-3" href="link/to/your/download/file" download>
+                                        <a className="hover-btn d-inline-block py-1 mt-3" href="https://wa.link/zab3la">
                                             استفسر عن التطبيق
                                         </a>
                                     </div>
@@ -123,9 +123,10 @@ export default function AnosLevelsEffects({ data }) {
                             <p> نضمن لك ظهور التغيرات الإيجابية منذ العام الأول في التطبيق بإذن الله</p>
                             <h2 className="head-blue mt-3 mb-4">ما التغيرات الإيجابية التي ستظهر
                                 على طلابك؟</h2>
-                            <a className="hover-outlined-btn me-3 mt-3" href="link/to/your/download/file" download>
-                                <i className="fa-solid fa-download me-2"></i>
-                                حمل ملف الدراسة
+                            <a className="hover-outlined-btn me-3 mt-3" href="/client-testimonial">
+                                <i className="fa-solid fa-video me-2"></i>
+                                    اطلع إلى تجارب المطبقين
+                                <i className="fa-solid fa-arrow-left ms-2"></i>
                             </a>
                         </div>
                     </div>

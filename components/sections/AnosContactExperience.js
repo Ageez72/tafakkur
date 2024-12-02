@@ -14,7 +14,7 @@ export default function AnosContactExperience() {
                             </h2>
                         </div>
                         <div className="col-md-5 col-12 text-center">
-                            <Link className="hover-outlined-btn white-btn" href="/contact-us">تواصل معنا</Link>
+                            <Link className="hover-outlined-btn white-btn" href="https://wa.link/ifr9ma">تواصل معنا</Link>
                         </div>
                     </div>
                 </div>
@@ -34,7 +34,7 @@ export default function AnosContactExperience() {
                                 يقدم القسم التأهيل والدعم المستمر للمؤسسات المطبقة من خلال الزيارات الميدانية واللقاءات التفاعلية عن بعد والبريد الإلكتروني ومجموعات المحادثة، ليطور أداء المشرفين والمعلمين في تطبيق منهاج تفكر، والكشف عن الموهوبين المبدعين والكشف عن أنواع الذكاء المرتفع لدى الطلاب، وتحقيق الأهداف الوجدانية ، وتقييم النتاجات الروحية والنفسية والأخلاقية، وتهيئة البيئة الإيجابية وازالة التوتر.
                             </p>
                             <p>
-                                <a className="d-inline-flex align-items-center" href="link/to/your/download/file" download>
+                                <a className="d-inline-flex align-items-center" href="https://forms.zohopublic.com/tafakkur/form/Untitled19/formperma/ZwPaVDv5Ld5kLqH7iN28BBABGeQ4CqON5AF5LrFYrY4">
                                     <i className="fa-solid fa-download me-2"></i>
                                     حمل البروشور التعريفي
                                 </a>

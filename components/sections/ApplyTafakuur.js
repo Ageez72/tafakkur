@@ -15,8 +15,8 @@ export default function ApplyTafakuur({darkBtn}) {
                         </div>
                         <div className='col-md-6 wow fadeInUp' data-wow-delay=".5s">
                             <div className='action-buttons text-center mt-5 mt-md-0'>
-                                <Link href='/contact-us' target='_blank' className={`${darkBtn ? "hover-btn": "hover-outlined-btn"} me-3`}>
-                                    تواصل معنا
+                                <Link href='https://wa.link/zab3la' target='_blank' className={`${darkBtn ? "hover-btn": "hover-outlined-btn"} me-3`}>
+                                    تواصل مع فريق الاعتماد
                                 </Link>
                             </div>
                         </div>

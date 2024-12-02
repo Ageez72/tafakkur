@@ -26,11 +26,11 @@ export default function AnosManager() {
                             حاصلة على عدة جوائز عالمية ولها أكثر من 65 إصدار باللغتين العربية والإنجليزية
                         </p>
                         <div className='mb-5 mt-3 img-logos'>
-                            <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/canada-global.jpg" alt="canada global" />
-                            <img className="ms-3" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/ins-logo2.jpg" alt="المربي الحضاري" />
+                            <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/جائزة-مها-شحادة-كندا.png" alt="جائزة مها شحادة كندا" />
+                            <img className="ms-3" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/الجوائز-مها-شحاده.png" alt="جائزة مها شحادة" />
                         </div>
                         <p className='white-txt mb-4'>
-                            <a href={`#${urlParams}`} target='_blank' className='d-inline-flex align-items-center white-txt'>
+                            <a href={`https://mahashehadeh.com${urlParams}`} target='_blank' className='d-inline-flex align-items-center white-txt'>
                                 الموقع الرسمي للأستاذة مها شحاده
                                 <i className="fa-solid fa-arrow-left ms-2"></i>
                             </a>

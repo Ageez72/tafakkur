@@ -10,7 +10,7 @@ export default function SupervisoryCommittee() {
                 <div className="row">
                     <div className="col-12 col-md-6 equal-width-div text-center mt-5">
                         <div className="person-img">
-                            <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/person1.png" alt="Person" />
+                            <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/محمد-العمري.png" alt="Person" />
                         </div>
                         <div className="content mt-3">
                             <h3 className="person-name">أ.د. محمد نبيل العمري</h3>
@@ -19,7 +19,7 @@ export default function SupervisoryCommittee() {
                     </div>
                     <div className="col-12 col-md-6 equal-width-div text-center mt-5">
                         <div className="person-img">
-                            <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/person2.png" alt="Person" />
+                            <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/بسام-العموش.jpg" alt="Person" />
                         </div>
                         <div className="content mt-3">
                             <h3 className="person-name">معالي أ.د. بسام العموش</h3>
@@ -29,7 +29,7 @@ export default function SupervisoryCommittee() {
                     </div>
                     <div className="col-12 col-md-6 equal-width-div text-center mt-5">
                         <div className="person-img">
-                            <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/person3.png" alt="Person" />
+                            <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/فتحي-جروان.png" alt="Person" />
                         </div>
                         <div className="content mt-3">
                             <h3 className="person-name">أ.د. فتحي جروان</h3>
@@ -39,7 +39,7 @@ export default function SupervisoryCommittee() {
                     </div>
                     <div className="col-12 col-md-6 equal-width-div text-center mt-5">
                         <div className="person-img">
-                            <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/person4.png" alt="Person" />
+                            <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/محمد-نوفل.png" alt="Person" />
                         </div>
                         <div className="content mt-3">
                             <h3 className="person-name">د. محمد بكر نوفل</h3>
@@ -49,7 +49,7 @@ export default function SupervisoryCommittee() {
                     </div>
                     <div className="col-12 col-md-6 equal-width-div text-center mt-5">
                         <div className="person-img">
-                            <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/person5.jpeg" alt="Person" />
+                            <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/عبدالسلام-الفندي.png" alt="Person" />
                             {/* <img src="/assets/img/anos/person5.jpeg" alt="Person" /> */}
                         </div>
                         <div className="content mt-3">

@@ -19,7 +19,7 @@ export default function SupervisoryCommittee() {
                     </div>
                     <div className="col-12 col-md-6 equal-width-div text-center mt-5">
                         <div className="person-img">
-                            <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/بسام-العموش.jpg" alt="Person" />
+                            <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/بسام-العموش.png" alt="Person" />
                         </div>
                         <div className="content mt-3">
                             <h3 className="person-name">معالي أ.د. بسام العموش</h3>

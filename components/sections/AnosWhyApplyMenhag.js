@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import VideoPopup from "../elements/VideoPopup";
 import { getYouTubeVideoID } from "@/helpers";
 
@@ -41,7 +42,7 @@ export default function AnosWhyApplyMenhag({data}) {
                                 </div>
                                 <div className="col-lg-6 mt-0 slider-side pe-0">
                                     <div className="about-tafakuur-image h-100 video-wrapper">
-                                        <img className='w-100 h-100 object-fit' src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/video.jpg" alt='image' />
+                                        <Image className='w-100 h-100 object-fit' src={data && data[0]?.image} alt='image' />
                                         <VideoPopup shapeIcon={true} style={3} videoId={data && data[0]?.video && getYouTubeVideoID(data[0].video)} />
                                     </div>
                                 </div>

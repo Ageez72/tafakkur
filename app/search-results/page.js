@@ -32,7 +32,10 @@ export default function search() {
     };
 
     try {
-      const res = await fetch(`${state.HTTP_URL}search?search=${term}&limit=${limit}&page=${page}`, requestOptions);
+      const res = await fetch(
+        `${state.HTTP_URL}search?search=${term}&limit=${limit}&page=${page}`,
+        requestOptions
+      );
       if (!res.ok) {
         throw new Error("Failed to fetch data");
       }
@@ -65,7 +68,7 @@ export default function search() {
 
   // Handle form submission
   const handleSearchSubmit = (e) => {
-    setPage(1)
+    setPage(1);
     e.preventDefault(); // prevent page reload
     if (searchTerm.trim() !== "") {
       const newUrl = `/search-results?query=${encodeURIComponent(searchTerm)}`;
@@ -81,8 +84,8 @@ export default function search() {
   };
 
   useEffect(() => {
-    document.title = "تفكر | نتائج البحث"
-  })
+    document.title = "تفكر | نتائج البحث";
+  });
 
   return (
     <Layout headerStyle={1} footerStyle={1} whiteHeader={1} loader={loading}>
@@ -126,7 +129,9 @@ export default function search() {
                               <span>أخبار</span>
                             </div>
                             <h2>
-                              <Link href={`/news/${res.slug}`}>{res.title || res.name}</Link>
+                              <Link href={`/news/${res.slug}`}>
+                                {res.title || res.name}
+                              </Link>
                             </h2>
                             <div className="news-info d-flex flex-wrap mb-4 mt-3 gap-3">
                               <div className="news-date">
@@ -134,7 +139,12 @@ export default function search() {
                                 <span>{formatDate("12 ديسمبر 2023")}</span>
                               </div>
                             </div>
-                            <p className="clamp clamp-2">{res.desc}</p>
+                            <div
+                              className="clamp clamp-2"
+                              dangerouslySetInnerHTML={{
+                                __html: res.desc,
+                              }}
+                            />
                             <Link href={`/news/${res.slug}`}>المزيد</Link>
                           </>
                         )}
@@ -144,10 +154,18 @@ export default function search() {
                               <span>دورة</span>
                             </div>
                             <h2>
-                                <Link href={`tafakkur-training/courses/${res.slug}`}>{res.title || res.name}</Link>
+                              <Link
+                                href={`tafakkur-training/courses/${res.slug}`}
+                              >
+                                {res.title || res.name}
+                              </Link>
                             </h2>
                             <p>{res.desc}</p>
-                              <Link href={`tafakkur-training/courses/${res.slug}`}>المزيد</Link>
+                            <Link
+                              href={`tafakkur-training/courses/${res.slug}`}
+                            >
+                              المزيد
+                            </Link>
                           </>
                         )}
                         {res.type === "book" && (
@@ -156,10 +174,21 @@ export default function search() {
                               <span>كتاب</span>
                             </div>
                             <h2>
-                                <Link href={`/tafakkur-publishers/categories/${res.category.slug}/products/${res.slug}`}>{res.title || res.name}</Link>
+                              <Link
+                                href={`/tafakkur-publishers/categories/${res.category.slug}/products/${res.slug}`}
+                              >
+                                {res.title || res.name}
+                              </Link>
                             </h2>
-                            <p className="clamp clamp-2 mt-4" dangerouslySetInnerHTML={{ __html: res.desc }} />
-                              <Link href={`/tafakkur-publishers/categories/${res.category.slug}/products/${res.slug}`}>المزيد</Link>
+                            <p
+                              className="clamp clamp-2 mt-4"
+                              dangerouslySetInnerHTML={{ __html: res.desc }}
+                            />
+                            <Link
+                              href={`/tafakkur-publishers/categories/${res.category.slug}/products/${res.slug}`}
+                            >
+                              المزيد
+                            </Link>
                           </>
                         )}
                         {res.type === "book_category" && (
@@ -168,7 +197,11 @@ export default function search() {
                               <span>سلسة</span>
                             </div>
                             <h2>
-                                <Link href={`/tafakkur-publishers/categories/${res.slug}`}>{res.title || res.name}</Link>
+                              <Link
+                                href={`/tafakkur-publishers/categories/${res.slug}`}
+                              >
+                                {res.title || res.name}
+                              </Link>
                             </h2>
                           </>
                         )}
@@ -178,10 +211,19 @@ export default function search() {
                               <span>مستوى</span>
                             </div>
                             <h2>
-                                <Link href={`/tafakkur-publishers/categories/${res.slug}`}>{res.title || res.name}</Link>
+                              <Link
+                                href={`/tafakkur-publishers/categories/${res.slug}`}
+                              >
+                                {res.title || res.name}
+                              </Link>
                             </h2>
-                            <p className="clamp clamp-2 mt-4" dangerouslySetInnerHTML={{ __html: res.desc}} />
-                              <Link href={`/tafakkur-academy/levels/${res.slug}`}>المزيد</Link>
+                            <p
+                              className="clamp clamp-2 mt-4"
+                              dangerouslySetInnerHTML={{ __html: res.desc }}
+                            />
+                            <Link href={`/tafakkur-academy/levels/${res.slug}`}>
+                              المزيد
+                            </Link>
                           </>
                         )}
                       </div>
@@ -192,17 +234,20 @@ export default function search() {
             ) : (
               <h3 className="no-results mt-5">لا يوجد نتائج لهذا البحث!</h3>
             )}
-            <Pagination links={searchResults?.links} handlePagination={(num) => setPage(num)} />
+            <Pagination
+              links={searchResults?.links}
+              handlePagination={(num) => setPage(num)}
+            />
           </div>
         </div>
-        <div className={`contact-wrapper ${searchResults.length > 0 ? "" : "big-space"}`}>
+        <div className="contact-wrapper">
           <div className="container custom-container shape-wrapper">
-          <Image
-          src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/contact/shape.png"
-          width={85}
-          height={68}
-          alt="shape"
-        />
+            <Image
+              src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/contact/shape.png"
+              width={85}
+              height={68}
+              alt="shape"
+            />
             <div className="row">
               <div className="col-lg-9">
                 <h2>تواصل معنا</h2>

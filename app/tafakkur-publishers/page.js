@@ -14,7 +14,7 @@ import { useAppContext } from "@/context/AppContext";
 import en from "../../locales/en.json";
 import ar from "../../locales/ar.json";
 import { wrapNumbersInSpan } from "@/helpers";
-
+import Image from "next/image";
 
 const achievementsData = [
     {
@@ -101,8 +101,12 @@ export default function publishers() {
                 <div className="publisher-contact">
                     <div className="container custom-container">
                         <div className="row">
-                            <div className="col-12 col-md-3 col-md-4 img-side d-none d-lg-block">
-                                <img className="w-100" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/versions/boy.png" alt="boy" />
+                            <div className="col-12 col-md-3 col-md-4 img-side d-none d-lg-block position-relative">
+                                <Image
+                                    src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/versions/boy.png"
+                                    alt="boy"
+                                    fill={true}
+                                /> 
                             </div>
                             <div className="col-12 col-md-3 col-md-8">
                                 <h2 className="head-blue mb-4">تواصل معنا</h2>

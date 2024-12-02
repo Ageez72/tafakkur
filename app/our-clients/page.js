@@ -140,7 +140,13 @@ export default function TafakuurInstitutions() {
                                     <div className="col-12 col-lg-6 video-wrapper">
                                         <div className="video-wrapper">
                                             <VideoPopup shapeIcon={true} style={3} videoId={institutionsData?.videos && getYouTubeVideoID(institutionsData?.videos[0]?.video)} />
-                                            <img className="w-100 object-fit border-radius-8" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/training/testimonials.jpg" alt="course" />
+                                            <Image
+                                                src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/training/testimonials.jpg"
+                                                width={500}
+                                                height={314}
+                                                alt="image"
+                                                className="w-100 object-fit border-radius-8" 
+                                            />
                                         </div>
                                     </div>
                                     <div className="col-12 col-lg-6">

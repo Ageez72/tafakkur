@@ -1,11 +1,17 @@
 import VideoPopup from "../elements/VideoPopup";
 import { getYouTubeVideoID } from "@/helpers";
+import Image from "next/image";
 
 export default function AnosReviewVideo({ data }) {    
     return (
         <div className="effects-results anos-review-video section-padding">
             <div className="shape top container w-100 center p-0">
-                <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/contact/shape.png" alt="shape" />
+                <Image
+                    src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/contact/shape.png"
+                    width={85}
+                    height={68}
+                    alt="shape"
+                />
             </div>
             <div className="overlay"></div>
             <div className="container custom-container content text-center position-relative">

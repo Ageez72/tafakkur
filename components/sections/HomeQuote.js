@@ -1,10 +1,16 @@
 import React from 'react'
-
+import Image from 'next/image'
 export default function HomeQuote() {
     return (
         <section className='home-quote section-padding'>
             <div className='container custom-container position-relative'>
-                <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/contact/shape.png" className="shape top right" alt="shape" />
+                <Image
+                    src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/contact/shape.png"
+                    width={85}
+                    height={68}
+                    alt="shape"
+                    className="shape top right"
+                />
                 <div className='row home-quote-row'>
                     <div className='col-12 col-lg-6'>
                         <h2 className='white-txt'>

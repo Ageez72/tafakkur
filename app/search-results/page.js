@@ -8,6 +8,7 @@ import Pagination from "@/components/sections/Pagination";
 import { formatDate } from "@/helpers";
 import { useAppContext } from "@/context/AppContext";
 import { wrapNumbersInSpan } from "@/helpers";
+import Image from "next/image";
 
 export default function search() {
   const { state } = useAppContext();
@@ -196,7 +197,12 @@ export default function search() {
         </div>
         <div className={`contact-wrapper ${searchResults.length > 0 ? "" : "big-space"}`}>
           <div className="container custom-container shape-wrapper">
-            <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/contact/shape.png" alt="shape" />
+          <Image
+          src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/contact/shape.png"
+          width={85}
+          height={68}
+          alt="shape"
+        />
             <div className="row">
               <div className="col-lg-9">
                 <h2>تواصل معنا</h2>

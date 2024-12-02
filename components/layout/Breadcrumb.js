@@ -2,6 +2,8 @@ import Link from "next/link";
 import { useAppContext } from "@/context/AppContext";
 import en from "../../locales/en.json";
 import ar from "../../locales/ar.json";
+import Image from "next/image";
+
 export default function Breadcrumb({
   breadcrumbTitle,
   bannerBg,
@@ -27,7 +29,15 @@ export default function Breadcrumb({
         style={{ backgroundImage: bgImage }}
         parentrumb={parentrumb}
       >
-        {shapeImg && <img className="shape" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/contact/shape.png" alt="shape"/>}
+        {shapeImg && (
+          <Image
+          src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/contact/shape.png"
+          width={85}
+          height={68}
+          alt="shape"
+          className="shape"
+        />
+        )}
         <div className="overlay"></div>
         <div className="container custom-container">
           <div className="page-heading">

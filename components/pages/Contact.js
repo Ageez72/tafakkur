@@ -4,6 +4,7 @@ import { useAppContext } from "@/context/AppContext";
 import en from "../../locales/en.json";
 import ar from "../../locales/ar.json";
 import ContactForm from '../sections/ContactForm';
+import Image from "next/image";
 
 export default function Contact() {
   const { state } = useAppContext();
@@ -54,7 +55,13 @@ export default function Contact() {
             </div>
           </div>
           <div className="map-wrapper position-relative">
-          <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/contact/shape.png" className="shape top right ms-5" alt="shape" />
+          <Image
+          src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/contact/shape.png"
+          width={85}
+          height={68}
+          alt="shape"
+          className="shape top right ms-5"
+        />
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3384.8490094401873!2d35.8432952!3d31.9649927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ca16de2267253%3A0xd81f30b3ed2a8bb8!2z2KrZgdmD2LEg2YTYqNmG2KfYoSDYp9mE2KXZhtiz2KfZhiBUYWZha2t1ciBJbnN0aXR1dGlvbg!5e0!3m2!1sen!2seg!4v1723017410699!5m2!1sen!2seg" width="100%" height="750" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>

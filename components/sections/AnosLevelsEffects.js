@@ -2,7 +2,7 @@ import Image from 'next/image';
 import VideoPopup from "../elements/VideoPopup";
 import { getYouTubeVideoID } from "@/helpers";
 
-export default function AnosLevelsEffects({data}) {    
+export default function AnosLevelsEffects({ data }) {
     return (
         <section className="anos-levels-effects">
             <div className="bg-color">
@@ -16,14 +16,13 @@ export default function AnosLevelsEffects({data}) {
                             <div className="col-12 col-md-6 col-lg-4 my-3 col-wrapper">
                                 <div className="level-side">
                                     <div className="card-avatar">
-                                        <Image src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/1.jpg" alt="avatar image" />
-                                    </div>
+                                        <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/1.jpg" alt="avatar image" />                                    </div>
                                     <div className="card-hover-cover">
                                         <h3 className="white-txt">المستوى الأول</h3>
                                         <h3 className="white-txt my-3">أنا إنسان مميز</h3>
                                         <p className="white-txt">
-                                        للفئة العمرية
-                                            <span className="en-txt mx-2">5-6</span> 
+                                            للفئة العمرية
+                                            <span className="en-txt mx-2">5-6</span>
                                             سنوات
                                         </p>
                                     </div>
@@ -32,8 +31,7 @@ export default function AnosLevelsEffects({data}) {
                             <div className="col-12 col-md-6 col-lg-4 my-3 col-wrapper">
                                 <div className="level-side">
                                     <div className="card-avatar">
-                                        <Image src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/2.jpg" alt="avatar image" />
-                                    </div>
+                                        <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/2.jpg" alt="avatar image" />                                    </div>
                                     <div className="card-hover-cover">
                                         <h3 className="white-txt">المستوى الثاني</h3>
                                         <h3 className="white-txt my-3">أنا أحبكم</h3>
@@ -44,7 +42,7 @@ export default function AnosLevelsEffects({data}) {
                             <div className="col-12 col-md-6 col-lg-4 my-3 col-wrapper">
                                 <div className="level-side">
                                     <div className="card-avatar">
-                                        <Image src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/3.jpg" alt="avatar image" />
+                                        <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/3.jpg" alt="avatar image" />
                                     </div>
                                     <div className="card-hover-cover">
                                         <h3 className="white-txt">المستوى الثالث</h3>
@@ -98,11 +96,11 @@ export default function AnosLevelsEffects({data}) {
                                 </div>
                                 <div className="col-12 col-md-6">
                                     <div className="action-buttons d-flex align-items-center justify-content-center flex-wrap">
-                                        <a className="hover-outlined-btn d-inline-block py-1 me-3 mt-3"  href="link/to/your/download/file" download>
+                                        <a className="hover-outlined-btn d-inline-block py-1 me-3 mt-3" href="link/to/your/download/file" download>
                                             <i className="fa-solid fa-download me-2"></i>
                                             حمل البروشور التعريفي
                                         </a>
-                                        <a className="hover-btn d-inline-block py-1 mt-3"  href="link/to/your/download/file" download>
+                                        <a className="hover-btn d-inline-block py-1 mt-3" href="link/to/your/download/file" download>
                                             استفسر عن التطبيق
                                         </a>
                                     </div>

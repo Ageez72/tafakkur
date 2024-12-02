@@ -10,6 +10,7 @@ import AnosTestimonialSlider from "@/components/slider/AnosTestimonialSlider";
 import { useAppContext } from "@/context/AppContext";
 import en from "../../locales/en.json";
 import ar from "../../locales/ar.json";
+import Image from "next/image";
 
 export default function TafakuurInstitutions() {
     
@@ -151,7 +152,13 @@ export default function TafakuurInstitutions() {
                     </section>
                     <section className="book-seat-section pb-4">
                         <div className="container custom-container section-padding position-relative">
-                            <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/contact/shape.png" className="shape top" alt="shape" />
+                            <Image
+                                src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/contact/shape.png"
+                                width={85}
+                                height={68}
+                                alt="shape"
+                                className="shape top"
+                            />
                             <div className='row align-items-center'>
                                 <div className='col-md-6 wow fadeInUp' data-wow-delay=".5s">
                                     <div className='content'>

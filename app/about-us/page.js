@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import Layout from "@/components/layout/Layout";
 import AboutImageSlider from "@/components/slider/AboutImageSlider";
 import ContactForm from "@/components/sections/ContactForm";
+import Image from "next/image";
+
 const imageArr = [
     "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/اجتماع-فريق-عمل-تفكر.jpg",
     "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/ورشة-عمل-قيادة-النساء-تفكر.jpg",
@@ -21,10 +23,10 @@ const imageArr = [
     "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/حفل-اجتماع-تفكر.jpg",
     "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/ندوة-حضور-تفكر.jpg",
     "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/مدارس-نجمة-الفريد-مع-فريق-تفكر.jpg"
-  ];
+];
 
 export default function WhoWeAre() {
-    useEffect(()=>{
+    useEffect(() => {
         document.title = "عن تفكر"
     })
     return (
@@ -41,11 +43,29 @@ export default function WhoWeAre() {
                         <div className="row justify-content-evenly align-items-center">
                             <div className="col-12 col-sm-8 col-lg-5 row align-items-center">
                                 <div className="col-6">
-                                    <img className="sm-image mb-4" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/1.jpg" alt="image" />
-                                    <img className="sm-image" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/3.jpg" alt="image" />
+                                    <Image
+                                        src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/1.jpg"
+                                        width={200}
+                                        height={235}
+                                        className="sm-image mb-4"
+                                        alt="image"
+                                    />
+                                    <Image
+                                        src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/3.jpg"
+                                        width={200}
+                                        height={235}
+                                        className="sm-image"
+                                        alt="image"
+                                    />
                                 </div>
                                 <div className="col-6">
-                                    <img className="sm-image" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/2.jpg" alt="image" />
+                                    <Image
+                                        src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/2.jpg"
+                                        width={200}
+                                        height={235}
+                                        className="sm-image"
+                                        alt="image"
+                                    />
                                 </div>
                             </div>
                             <div className="col-12 col-lg-5 mt-lg-0 mt-5">
@@ -161,7 +181,12 @@ export default function WhoWeAre() {
                             </h2>
                             <div className="row flex-wrap pt-4">
                                 <div className="col-auto president-image">
-                                    <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/president.jpg" alt="president" />
+                                    <Image
+                                        src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/about/president.jpg"
+                                        width={250}
+                                        height={250}
+                                        alt="president"
+                                    />
                                 </div>
                                 <div className="col ps-lg-5 ps-2">
                                     <p>
@@ -187,7 +212,12 @@ export default function WhoWeAre() {
                     </div>
                     <div className="contact-wrapper">
                         <div className="container custom-container shape-wrapper">
-                            <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/contact/shape.png" alt="shape" />
+                            <Image
+                                src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/contact/shape.png"
+                                width={85}
+                                height={68}
+                                alt="shape"
+                            />
                             <div className="row justify-content-center">
                                 <div className="col-lg-9">
                                     <h2>تواصل معنا</h2>

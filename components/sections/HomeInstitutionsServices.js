@@ -1,12 +1,18 @@
 import Link from "next/link";
-
+import Image from "next/image";
 export default function HomeInstitutionsServices() {
     return (
         <section className='Home-institutions-services'>
             <div className="about-tafakkur-training-wrapper image-full">
                 <div className="about-tafakkur-training-bg">
                     <div className="container custom-container h-100">
-                        <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/contact/shape.png" className="shape" alt="shape" />
+                        <Image
+                            src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/contact/shape.png"
+                            width={85}
+                            height={68}
+                            alt="shape"
+                            className="shape"
+                        />
                         <div className="row g-4 align-items-center h-100">
                             <div className="col-lg-5 mb-4">
                                 <div className="about-tafakuur-content px-0 pe-lg-5 ps-lg-4">

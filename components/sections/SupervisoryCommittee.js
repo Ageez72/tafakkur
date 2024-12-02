@@ -1,10 +1,16 @@
 import Link from "next/link"
-
+import Image from "next/image"
 export default function SupervisoryCommittee() {
     return (
         <section className="supervisory-committee">
             <div className="container section-padding position-relative">
-                <img className="shape top right" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/contact/shape.png" alt="shape" />
+                <Image
+                    src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/contact/shape.png"
+                    width={85}
+                    height={68}
+                    alt="shape"
+                    className="shape top right"
+                />
                 <h2 className="head-blue text-center mb-2">لجنة الإشراف الشرعي والتربوي </h2>
                 <p className="text-center">نخبة من العلماء والمختصين</p>
                 <div className="row">
@@ -56,7 +62,7 @@ export default function SupervisoryCommittee() {
                             <h3 className="person-name">د. عبدالسلام فندي</h3>
                             <p className="person-desc">
                                 دكتوراة في الحديث الشريف وعلومه
-                                </p>
+                            </p>
                         </div>
                     </div>
                 </div>

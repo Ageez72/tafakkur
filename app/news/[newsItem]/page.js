@@ -7,6 +7,7 @@ import ar from "../../../locales/ar.json";
 import ContactForm from "@/components/sections/ContactForm";
 import NewsCategories from "@/components/sections/NewsCategories";
 import { formatDate } from "@/helpers";
+import Image from "next/image";
 
 export default function newsPage({ params }) {
     const { state } = useAppContext();
@@ -75,7 +76,7 @@ export default function newsPage({ params }) {
                                     </div>
 
                                     <div className="details-content">
-                                        <div className="news-image mb-5" style={{backgroundImage:` url(${newsDetails?.image})`}}>
+                                        <div className="news-image mb-5" style={{ backgroundImage: ` url(${newsDetails?.image})` }}>
                                             <img className="w-100 border-radius-8" src={newsDetails?.image} alt="news cover" />
                                         </div>
                                         <div className="news-desc description" dangerouslySetInnerHTML={{ __html: newsDetails?.desc }} />
@@ -100,7 +101,12 @@ export default function newsPage({ params }) {
                     </div>
                     <div className="contact-wrapper">
                         <div className="container custom-container shape-wrapper">
-                            <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/contact/shape.png" alt="shape" />
+                            <Image
+                                src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/contact/shape.png"
+                                width={85}
+                                height={68}
+                                alt="shape"
+                            />
                             <div className="row">
                                 <div className="col-lg-9">
                                     <h2>تواصل معنا</h2>

@@ -13,6 +13,7 @@ import HomeQuote from "@/components/sections/HomeQuote";
 import TafakuurNewsListing from "@/components/sections/TafakuurNewsListing";
 import ContactForm from "@/components/sections/ContactForm";
 import { wrapNumbersInSpan } from "@/helpers";
+import Image from 'next/image'
 
 export default function page() {
   const { state } = useAppContext();
@@ -21,9 +22,9 @@ export default function page() {
   const [heroTestimonials, setHeroTestimonials] = useState(null);
   const [limit, setLimit] = useState(3);
   const [loading, setLoading] = useState(true);
-  useEffect(()=>{
+  useEffect(() => {
     document.title = "تفكر | Tafakkur"
-})
+  })
   useEffect(() => {
     const myHeaders = new Headers();
     myHeaders.append("Accept", "application/json");
@@ -62,8 +63,8 @@ export default function page() {
   return (
     <>
       <Layout headerStyle={1} footerStyle={1} loader={loading}>
-        <HomeHero data={heroTestimonials}/>
-        <HomeAbout  data={heroTestimonials}/>
+        <HomeHero data={heroTestimonials} />
+        <HomeAbout data={heroTestimonials} />
         <HomeInstitutionsServices />
         <HomeFamilyServices />
         <HomeAchievement />
@@ -71,7 +72,12 @@ export default function page() {
         <TafakuurNewsListing title="آخر الأخبار" noPaddingBottom={1} data={newsData?.data} />
         <div className="contact-wrapper">
           <div className="container custom-container shape-wrapper">
-            <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/contact/shape.png" alt="shape" />
+            <Image
+              src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/contact/shape.png"
+              width={85}
+              height={68}
+              alt="shape"
+            />
             <div className="row justify-content-center">
               <div className="col-lg-9">
                 <h2>تواصل معنا</h2>

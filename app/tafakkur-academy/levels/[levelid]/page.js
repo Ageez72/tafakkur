@@ -98,6 +98,7 @@ export default function page({ params }) {
                                 <div className="overlay"></div>
                                 <VideoPopup style={3} videoId={coursesData?.level?.sample_video && getYouTubeVideoID(coursesData?.level?.sample_video)} />
                                 <img className="w-100 h-100 object-fit" src={coursesData?.level?.sample_video_image} alt="course" />
+                                
                             </div>
                         </div>
                     </div>

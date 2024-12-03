@@ -323,6 +323,7 @@
         }
         &.txt-side-bottom {
             h5 {
+                transform: translateX(100px);
                 @media (max-width: 480px) {
                     transform: translateX(50px);
                 }

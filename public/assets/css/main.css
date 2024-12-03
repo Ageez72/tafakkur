@@ -5397,6 +5397,9 @@ p {
     width: 220px;
   }
 }
+.anos-hero-slider-wrapper .txt-side.txt-side-bottom h5 {
+  transform: translateX(100px);
+}
 @media (max-width: 480px) {
   .anos-hero-slider-wrapper .txt-side.txt-side-bottom h5 {
     transform: translateX(50px);

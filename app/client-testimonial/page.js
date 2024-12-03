@@ -77,8 +77,8 @@ export default function SaidAboutUs() {
                             </div>
 
                             <div className='action-buttons text-center mt-5 mt-md-0 wow fadeInUp' data-wow-delay=".5s">
-                                <Link href='/contact-us' target='_blank' className='hover-btn me-3'>
-                                    تواصل معنا
+                                <Link href='https://wa.link/zab3la' target='_blank' className='hover-btn me-3'>
+                                    تواصل مع فريق الاعتماد
                                 </Link>
                             </div>
                         </div>

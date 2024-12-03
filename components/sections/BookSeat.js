@@ -21,7 +21,7 @@ export default function BookSeat({ sonSeat }) {
                                     sonSeat ? (
                                         <h2>احجز مقعدك الآن في أقرب برنامج تدريبي!</h2>
                                     ) : (
-                                        <h2>احجز مقعد ابنك في أقرب دورة!</h2>
+                                        <h2>احجز مقعدك في أقرب دورة!</h2>
                                     )
                                 }
                                 <p>تواصل معنا الآن للتسجيل أو للحصول على المساعدة</p>
@@ -29,11 +29,11 @@ export default function BookSeat({ sonSeat }) {
                         </div>
                         <div className='col-md-6 wow fadeInUp' data-wow-delay=".5s">
                             <div className='action-buttons text-center mt-5 mt-md-0'>
-                                <Link href='#' target='_blank' className='hover-outlined-btn me-3'>
+                                <Link href='https://wa.link/fgespd' target='_blank' className='hover-outlined-btn me-3'>
                                     <i className="fa-brands fa-whatsapp me-2"></i>
                                     تواصل معنا
                                 </Link>
-                                <Link href={`#${urlParams}`} target='_blank' className='hover-btn '>سجل الآن</Link>
+                                <Link href='https://wa.link/fgespd' target='_blank' className='hover-btn '>سجل الآن</Link>
                             </div>
                         </div>
                     </div>

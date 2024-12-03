@@ -19,8 +19,7 @@ export default function HomeFamilyServices() {
                             <img className='logo' src='https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/home/logo-blue.png' alt='image' />
                             <div className='desc'>
                                 <p className='mb-4'>
-                                    يقدم برامج تدريبية متطورة لبناء الإنسان، ترتكز إلى أحدث نظريات الدماغ وعلم الأعصاب، وتسند إلى علم النفس الإ
-                                    سلامي، لفهم وتطوير أعمق لتفكير ومشاعر وسلوك الإنسان، استفاد من البرامج التدريبية آلاف الأشخاص حول العالم.
+                                    يقدم برامج تدريبية متطورة لبناء الإنسان، ترتكز إلى أحدث نظريات الدماغ وعلم الأعصاب، وتسند إلى علم النفس الإسلامي، لفهم وتطوير أعمق لتفكير ومشاعر وسلوك الإنسان، استفاد من البرامج التدريبية آلاف الأشخاص حول العالم.
                                 </p>
                                 <Link href="/tafakkur-training" className='d-inline-flex align-items-center'>
                                     اطلع على البرامج التدريبية
@@ -39,9 +38,9 @@ export default function HomeFamilyServices() {
                             <img className='logo' src='https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/home/logo-green.png' alt='image' />
                             <div className='desc'>
                                 <p className='mb-4'>
-                                    يقدم برامج تدريبية متطورة لبناء الإنسان، ترتكز إلى أحدث نظريات الدماغ وعلم الأعصاب، وتسند إلى علم النفس الإ
-                                    سلامي، لفهم وتطوير أعمق لتفكير ومشاعر وسلوك الإنسان، استفاد من البرامج التدريبية آلاف الأشخاص حول العالم.
-                                </p>
+                              يقدم تفكر ناشرون أكثر من ‎60‏ إصدار لمساعدة الأطفال واليافعين في بناء شخصيتهم ليكونوا مفكرين 
+ مبدعين، يشعرون بقيمتهم ومتوازنين، مؤمنين محبين لله، إيجابيين وأخلاقيين، جميع الإصدارات ترتكز إلى 
+ أحدث نظريات وأبحاث الدماغ.  </p>
                                 <Link href="/tafakkur-publishers" className='d-inline-flex align-items-center'>
                                     اطلع على الإصدارات
                                     <i className="fa-solid fa-arrow-left-long ms-2"></i>
@@ -59,8 +58,7 @@ export default function HomeFamilyServices() {
                             <img className='logo' src='https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/home/logo-orange.png' alt='image' />
                             <div className='desc'>
                                 <p className='mb-4'>
-                                    يقدم برامج تدريبية متطورة لبناء الإنسان، ترتكز إلى أحدث نظريات الدماغ وعلم الأعصاب، وتسند إلى علم النفس الإ
-                                    سلامي، لفهم وتطوير أعمق لتفكير ومشاعر وسلوك الإنسان، استفاد من البرامج التدريبية آلاف الأشخاص حول العالم.
+                                     منصة لتدريس منهاج تفكر للأبناء عن بعد ، ليستفيدوا أينما كانوا من عمق المنهاج في بناء شخصيتهم الإبداعية الأخلاقية، وبناء إيمانهم من خلال التفكر في آثار أسماء الله الحسنى لغرس محبة الله، للأعمار 6-14 سنة.
                                 </p>
                                 <Link href="/tafakkur-academy" className='d-inline-flex align-items-center'>
                                     سجل أبناءك في دورات تفكر

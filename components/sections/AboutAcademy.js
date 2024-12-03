@@ -50,7 +50,7 @@ export default function AboutAcademy({data}) {
                         <div className="video-wrapper m-auto mt-5">
                             <div className="overlay"></div>
                             <VideoPopup style={3} videoId={data && getYouTubeVideoID(data[1]?.video)} ></VideoPopup>
-                            <img className="w-100 h-100 object-fit" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/tafakkurAcademy/reviews.jpg" alt="reviews" />
+                            <img className="w-100 h-100 object-fit" src={data && data[1]?.image} alt="reviews" />
                         </div>
                         <div className="parents-said mt-4">
                             <div className="row">
@@ -66,7 +66,7 @@ export default function AboutAcademy({data}) {
                                         <p>
                                             الطلاب المسجلين في دوراتنا السابقة
                                         </p>
-                                        <a href={`#${urlParams}`} className="book-seat-btn d-block mt-2">
+                                        <a href={`https://forms.zohopublic.com/tafakkur/form/20251/formperma/GbxMESJCrgI6bxxn9Ti3S5hYjFwZ3p27F8qsveDmOmY${urlParams}`} className="book-seat-btn d-block mt-2">
                                             احجز مقعداً لابنك الآن
                                             <i className="fa-solid fa-caret-left ms-2"></i>
                                         </a>

@@ -88,7 +88,7 @@ export default function course({ params }) {
     }, [state.LANG]);
 
     // Replace with your phone number (including country code, but without + or 00)
-    const phoneNumber = '01027296196';
+    const phoneNumber = '962790317731';
     // Create the WhatsApp link
     const whatsappUrl = `https://wa.me/${phoneNumber}`;
     // Handle tab click
@@ -240,7 +240,7 @@ export default function course({ params }) {
                                 <div className="col-12 col-md-6 h-100 image-side video-wrapper p-0">
                                     <VideoPopup style={3} videoId={courseData?.course.url && getYouTubeVideoID(courseData?.course.url)} />
                                     <img className="w-100 h-100 object-fit" src={`${courseData?.course.author_image || "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/training/course.jpg"}`} alt="course" />
-                                    <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/achievement/shape.jpg" className="shape" alt="shape" />
+                                    <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/achievement/shape.png" className="shape" alt="shape" />
                                 </div>
                             </div>
                         </div>

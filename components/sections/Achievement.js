@@ -14,7 +14,7 @@ export default function Achievement2({ bg, publisher, data }) {
                 <div className="container custom-container">
                     <div className={`achievement-wrapper section-padding style-2 ${bg === "training" ? "training" : "publishers"}`}>
                         <div className="counter-area row g-4 py-4">
-                            {bg === "training" && <img className="shape" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/achievement/shape.jpg" alt="shape" />}
+                            {bg === "training" && <img className="shape" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/achievement/shape.png" alt="shape" />}
                             <div className="col-md-6 col-lg-3">
                                 <div className="counter-items wow fadeInUp" data-wow-delay=".9s">
                                     <div className="content text-center">

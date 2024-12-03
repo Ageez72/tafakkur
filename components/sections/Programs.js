@@ -22,7 +22,7 @@ function Programs({ data }) {
                         <div className='col-md-12 col-lg-3 col-xl-4 program-content wow fadeInUp ps-0 ps-md-4 ps-lg-5' data-wow-delay=".5s">
                             <h3>برامج الدبلوم التدريبية</h3>
                             <h4>أكثر من <span className='en-txt'>20</span> ساعة للبرنامج الواحد</h4>
-                            <Link href={`#${urlParams}`} target='_blank'>تواصل معنا لحجز مقعدك في أقرب دورة <i className="fa-solid fa-chevron-left"></i></Link>
+                            <Link href="https://wa.link/fgespd" target='_blank'>تواصل معنا لحجز مقعدك في أقرب دورة <i className="fa-solid fa-chevron-left"></i></Link>
                         </div>
                         <div className='col-md-12 col-lg-9 col-xl-8 d-flex flex-wrap'>
                             <div className='col-12 col-md-6 px-2'>
@@ -38,7 +38,7 @@ function Programs({ data }) {
                         <div className='col-md-12 col-lg-3 col-xl-4 program-content wow fadeInUp ps-0 ps-md-4 ps-lg-5' data-wow-delay=".5s">
                             <h3>الدورات التدريبية</h3>
                             <h4>أقل من <span className='en-txt'>20</span> ساعة للبرنامج الواحد</h4>
-                            <Link href={`#${urlParams}`} target='_blank'>سجل الأن و ابدأ التعلم مباشرة <i className="fa-solid fa-chevron-left"></i></Link>
+                            <Link href="https://wa.link/9a4i37" target='_blank'>سجل الأن و ابدأ التعلم مباشرة <i className="fa-solid fa-chevron-left"></i></Link>
                         </div>
                         <div className='col-md-12 col-lg-9 col-xl-8 d-flex flex-wrap p-0'>
                             <div className='col-12 col-md-6 px-2'>

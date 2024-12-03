@@ -119,7 +119,7 @@ export default function AcademyLevels({ data }) {
             <div className="d-sm-flex align-items-center">
               <div className="h-100 one-img mb-sm-0 mb-4">
                 <Image
-                  src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/tafakkurAcademy/level3.jpg"
+                  src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/tafakkurAcademy/level3.png"
                   alt="level image"
                   width={200}
                   height={300}
@@ -129,7 +129,7 @@ export default function AcademyLevels({ data }) {
               <div className="ms-sm-4">
                 <div className="two-imgs mb-4">
                   <Image
-                    src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/tafakkurAcademy/level4.jpg"
+                    src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/tafakkurAcademy/level4.png"
                     alt="level image"
                     width={225}
                     height={245}
@@ -138,7 +138,7 @@ export default function AcademyLevels({ data }) {
                 </div>
                 <div className="two-imgs">
                   <Image
-                    src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/tafakkurAcademy/level5.jpg"
+                    src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/tafakkurAcademy/level5.png"
                     alt="level image"
                     width={225}
                     height={245}

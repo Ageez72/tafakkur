@@ -2,7 +2,7 @@
     Template Default Fonts & Fonts Styles
  ---------------------------------------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
 
 //font-family: "Font Awesome 6 Free";
 $fa: "Font Awesome 6 Free";
@@ -22,7 +22,7 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  
+
   [dir="ltr"] {
     font-family: "Myriad Pro" !important;
   }
@@ -151,7 +151,7 @@ span {
 .en-txt {
   // font-family: "__Kumbh_Sans_4f1589", "__Kumbh_Sans_Fallback_4f1589" !important;
   // font-weight: 500;
-  font-family: 'Myriad Pro' !important;
+  font-family: "Myriad Pro" !important;
 }
 
 .ar-txt {
@@ -180,7 +180,7 @@ textarea {
   padding: 80px 0;
 
   @media (max-width: 767px) {
-    padding: 80px var(--bs-gutter-x, .75rem);
+    padding: 80px var(--bs-gutter-x, 0.75rem);
   }
 }
 
@@ -234,7 +234,6 @@ textarea {
     border: 1px solid var(--themePurple);
   }
 
-
   .breadcrumb-wrapper & {
     &:hover {
       color: #fff;
@@ -268,7 +267,7 @@ textarea {
 }
 
 .en-text {
-  font-family: 'Myriad Pro';
+  font-family: "Myriad Pro";
 }
 
 .head-blue {
@@ -276,7 +275,7 @@ textarea {
 }
 
 .line-height-p {
-  line-height: 43px;
+  line-height: 1.6;
 }
 
 .max-150 {
@@ -297,7 +296,7 @@ textarea {
 }
 
 .w-md-50 {
-  @media (min-width:992px) {
+  @media (min-width: 992px) {
     width: 50%;
     margin: auto;
   }
@@ -315,7 +314,7 @@ textarea {
     }
 
     i {
-      color: #56538B;
+      color: #56538b;
       font-size: 20px;
       margin-top: 15px;
     }
@@ -337,40 +336,34 @@ textarea {
 }
 
 @media (min-width: 576px) {
-
   .custom-container {
     max-width: 540px;
   }
 }
 
 @media (min-width: 768px) {
-
   .custom-container {
     max-width: 650px;
   }
 }
 
 @media (min-width: 992px) {
-
   .custom-container {
     max-width: 900px;
   }
 }
 
 @media (min-width: 1200px) {
-
   .custom-container {
     max-width: 1040px;
   }
 }
 
 @media (min-width: 1400px) {
-
   .custom-container {
     max-width: 1220px;
   }
 }
-
 
 @media screen and (max-width: 991px) {
   .main-menu {
@@ -393,7 +386,7 @@ textarea {
       position: absolute;
       top: 7px;
       right: 0;
-      color: #FF8F15;
+      color: #ff8f15;
     }
   }
 
@@ -438,7 +431,7 @@ textarea {
       right: 0;
     }
 
-    @media (max-width:992px) {
+    @media (max-width: 992px) {
       width: 100%;
       display: block;
     }
@@ -513,8 +506,7 @@ textarea {
           position: absolute;
           right: 0;
           top: 0;
-          color: #251F67;
-
+          color: #251f67;
         }
       }
     }
@@ -528,7 +520,7 @@ textarea {
         content: "";
         width: 100%;
         height: 5px;
-        background-color: #2D45A0;
+        background-color: #2d45a0;
         position: absolute;
         left: 0;
         bottom: 0;
@@ -545,7 +537,7 @@ textarea {
     background-color: #f6f6fd;
   }
 
-  @media (max-width:767px) {
+  @media (max-width: 767px) {
     height: auto;
   }
 
@@ -576,7 +568,7 @@ textarea {
       margin: 0;
       border: 1px solid #ccc;
 
-      @media (max-width:767px) {
+      @media (max-width: 767px) {
         right: auto;
         transform: translate(-50%, -50%);
       }
@@ -589,7 +581,7 @@ textarea {
     top: 0;
     max-width: 750px;
 
-    @media (max-width:767px) {
+    @media (max-width: 767px) {
       width: 100%;
       position: relative;
     }
@@ -607,7 +599,7 @@ textarea {
   top: 88px;
   z-index: 10;
 
-  @media (max-width:767px) {
+  @media (max-width: 767px) {
     position: static;
   }
 }
@@ -684,11 +676,11 @@ a {
     bottom: 0;
 
     .swiper-pagination-bullet {
-      background-color: #C9C7F9;
+      background-color: #c9c7f9;
 
       &.swiper-pagination-bullet-active {
         transform: rotate(45deg);
-        background-color: #5046E4;
+        background-color: #5046e4;
       }
     }
   }

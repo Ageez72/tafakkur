@@ -19,20 +19,13 @@ export default function Shipping({versionsTitles}) {
                     <p>تواصل معنا الآن للطلب أو للحصول على المساعدة</p>
                     <div className="action-buttons mt-4 pt-3">
                         {
-                            versionsTitles ? (
                                 <>
-                                <a target="_blank" className="hover-outlined-btn me-3" href={`#${urlParams}`}>دعنا نساعدك بالاختيار</a>
-                                <a target="_blank" className="hover-btn " href={`#${urlParams}`}>
+                                <a target="_blank" className="hover-outlined-btn me-3" href={`https://forms.zohopublic.com/tafakkur/form/Resubscribeform/formperma/MZ0EONE48kPw3FvUZtxw2DitTAXK-SGeUWG3P_x18SI${urlParams}`}>أعلمني بكل جديد</a>
+                                <a target="_blank" className="hover-btn " href='https://wa.me/962790727220'>
                                     <i className="fa-brands fa-whatsapp me-3"></i>
                                     اطلب الأن
                                 </a>
                                 </>
-                            ) : (
-                                <>
-                                <Link className="hover-outlined-btn me-3" href="/contact-us">تواصل معنا</Link>
-                                <a target="_blank" className="hover-btn " href={`#${urlParams}`}>سجل الآن</a>
-                                </>
-                            )
                         }
                     </div>
                 </div>

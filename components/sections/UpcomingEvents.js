@@ -21,7 +21,7 @@ export default function UpcomingEvents({ data }) {
                             <i className="fa-regular fa-calendar calendar"></i>
                             <h2 className="head-blue mt-4 mb-4">معارض كتاب قادمة يشارك بها تفكر ناشرون</h2>
                             <div dangerouslySetInnerHTML={{ __html: data }} />
-                            <a href={`#${urlParams}`} className="mt-4 d-block inform-btn">أعلمني عند توفر الإصدارات في  معارض الكتاب <i className="fa-solid fa-arrow-left ms-2"></i></a>
+                            <a href={`https://forms.zohopublic.com/tafakkur/form/Resubscribeform/formperma/MZ0EONE48kPw3FvUZtxw2DitTAXK-SGeUWG3P_x18SI${urlParams}`} className="mt-4 d-block inform-btn">أعلمني عند توفر الإصدارات في  معارض الكتاب <i className="fa-solid fa-arrow-left ms-2"></i></a>
                         </div>
                         <div className="col-12 col-md-6 slider-side p-0">
                             <div className="col-12 col-md-6 position-relative w-100 h-100">

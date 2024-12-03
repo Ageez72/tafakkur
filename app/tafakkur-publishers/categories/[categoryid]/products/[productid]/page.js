@@ -1,6 +1,7 @@
 "use client"
 import { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
+import Image from "next/image";
 import Layout from "@/components/layout/Layout";
 import { useAppContext } from "@/context/AppContext";
 import en from "../../../../../../locales/en.json";
@@ -59,7 +60,7 @@ export default function ReviewDetails() {
                 parentrumbRoute={`tafakkur-publishers/categories/${categoryid}`}
                 breadcrumbTitle={bookDetails?.name}
                 versionsBtn="احصل على الإصدارات الآن"
-                btnRoute="/tafakkur-publishers/products"
+                btnRoute="https://forms.zohopublic.com/tafakkur/form/Untitled5/formperma/xbumF0HBgyi7ZpN5ZWjsHpn9jR5OODt5RsJ3RoTY5IA"
                 bannerBg={bookDetails?.cover_image || "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/versions/detailsCover.jpg"}
                 loader={loading}
             >
@@ -70,7 +71,7 @@ export default function ReviewDetails() {
                                 {
                                     bookDetails?.images?.map((image) => (
                                         <div className="book-wrapper mb-4">
-                                            <img className="w-100 border-radius-8" src={image?.image} alt={bookDetails?.name} />
+                                            <Image loading="lazy" className="w-100 border-radius-8" src={image?.image} alt={bookDetails?.name} />
                                         </div>
                                     ))
                                 }
@@ -123,7 +124,7 @@ export default function ReviewDetails() {
                                     {
                                         bookDetails?.video && (
                                             <div className="video-wrapper mt-5">
-                                                <img className="w-100 border-radius-15" src={bookDetails?.video_image && bookDetails?.video_image} alt="Version poster image" />
+                                                <Image loading="lazy" className="w-100 border-radius-15" src={bookDetails?.video_image && bookDetails?.video_image} alt="Version poster image" />
                                                 <VideoPopup style={3} videoId={bookDetails?.video && getYouTubeVideoID(bookDetails?.video)} />
                                             </div>
                                         )

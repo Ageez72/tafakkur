@@ -5444,11 +5444,11 @@ p {
   }
 }
 .anos-hero-slider-wrapper .hero-animate {
-  animation: slideIn 1s ease-in-out 0.8s;
+  animation: slideIn 0.5s ease-in-out 0.3s;
   animation-fill-mode: forwards;
 }
 .anos-hero-slider-wrapper .hero-animate-bottom {
-  animation: slideInbottom 1s ease-in-out 0.8s;
+  animation: slideInbottom 0.5s ease-in-out 0.3s;
   animation-fill-mode: forwards;
 }
 .anos-hero-slider-wrapper .bottom-side .overlay {

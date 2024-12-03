@@ -113,13 +113,13 @@ export default function AnosLevelsEffects({ data }) {
             <div className="anos-effects">
                 <div className="container">
                     <div className="row align-items-center justify-content-between">
-                        <div className="col-12 col-md-3 ps-5">
+                        <div className="col-12 col-md-3 ps-md-5">
                             <div className="wow fadeInUp video-wrapper" data-wow-delay=".4s">
                                 <VideoPopup shapeIcon={true} style={3} videoId={data && data[1]?.video && getYouTubeVideoID(data[1].video)} />
                                 <img className="w-100" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/effects.jpg" alt="avatar image" />
                             </div>
                         </div>
-                        <div className="col-12 col-md-9 ps-5">
+                        <div className="col-12 col-md-9 ps-3 ps-md-5">
                             <p> نضمن لك ظهور التغيرات الإيجابية منذ العام الأول في التطبيق بإذن الله</p>
                             <h2 className="head-blue mt-3 mb-4">ما التغيرات الإيجابية التي ستظهر
                                 على طلابك؟</h2>

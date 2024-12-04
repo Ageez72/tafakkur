@@ -216,6 +216,11 @@ textarea {
   &.white-btn {
     color: $white;
     border-color: $white;
+    &:hover {
+      color: var(--themePurple);
+      background-color: #fff ;
+      border-color: #fff;
+    }
   }
 }
 
@@ -236,8 +241,9 @@ textarea {
 
   .breadcrumb-wrapper & {
     &:hover {
-      color: #fff;
-      background-color: #83296bd4;
+      color: var(--themePurple) !important;
+      background-color: #fff;
+      border-color: #fff;
     }
   }
 }

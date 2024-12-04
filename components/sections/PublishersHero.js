@@ -34,10 +34,10 @@ export default function PublishersHero({ data }) {
                                     اطلع إلى التفاصيل
                                     <i className="fa-solid fa-arrow-left ms-2"></i></Link>
 
-                                <Link href="/tafakkur-publishers/products" className="wow fadeInUp hero-button hero-hover-btn-outline  me-3" data-wow-delay=".4s">
+                                <Link href="/tafakkur-publishers/products" className="wow fadeInUp hero-button hero-hover-btn-outline me-3" data-wow-delay=".4s">
                                     اطلع على جميع الإصدارات
                                 </Link>
-                                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="wow fadeInUp hero-button hero-hover-btn" data-wow-delay=".4s">
+                                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="wow fadeInUp hero-button" data-wow-delay=".4s">
                                     <i className="fa-brands fa-whatsapp me-3"></i>
                                     استفسر الآن
                                 </a>

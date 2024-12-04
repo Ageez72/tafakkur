@@ -118,7 +118,7 @@ export default function Version() {
                                 }
                             </div>
 
-                            <VersionTestimonialSlider data={versionDetails?.testimonials}></VersionTestimonialSlider>
+                           {versionDetails?.testimonials?.length ? <VersionTestimonialSlider data={versionDetails?.testimonials}></VersionTestimonialSlider> : ""}
                         </div>
 
                     </div>

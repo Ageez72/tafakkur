@@ -25,7 +25,7 @@ export default function VersionsListing() {
         method: 'GET',
         headers: myHeaders,
     };
-    useEffect(()=>{
+    useEffect(() => {
         document.title = "إصدارات تفكر | إصدارات تنمي الشخصية الإبداعية والأخلاقية"
     })
     useEffect(() => {
@@ -49,7 +49,7 @@ export default function VersionsListing() {
 
     }, [state.LANG])
 
-    const handleFilters= (age_from, age_to, version)=> {
+    const handleFilters = (age_from, age_to, version) => {
         setLoading(true)
         const fetchData = async () => {
             try {
@@ -69,10 +69,10 @@ export default function VersionsListing() {
         fetchData();
     }
 
-    const getCategorySlug = (book)=> {
+    const getCategorySlug = (book) => {
         for (let i = 0; i < versionsData.length; i++) {
             const element = versionsData[i];
-            if(element.id === book.category.id){
+            if (element.id === book.category.id) {
                 return element.slug
             }
         }
@@ -93,22 +93,24 @@ export default function VersionsListing() {
                 <section className="version-details section-padding pb-0">
                     <div className="container custom-container">
                         <Suspense fallback={<div>Loading...</div>}>
-                            <Filter title="صنف حسب العمر والسلسلة" fieldsNumber={2} ages={agesData} versions={versionsData} handleSubmit={handleFilters}/>
+                            <Filter title="صنف حسب العمر والسلسلة" fieldsNumber={2} ages={agesData} versions={versionsData} handleSubmit={handleFilters} />
                         </Suspense>
                         <div className='all-versions-items'>
                             <div className='row'>
                                 {
                                     booksData?.map((book) => (
                                         <div className='item-col col-md-6 col-lg-4 col-xl-3 col-12 mb-4' key={book.id}>
-                                                <Link href={`/tafakkur-publishers/categories/${getCategorySlug(book)}/products/${book.slug}`}>
-                                                    <Image 
-                                                        className="w-100 h-100 object-fit" 
-                                                        src={book.image} 
-                                                        alt={book.name} 
-                                                        layout="responsive"
-                                                        loading="lazy" 
-                                                    />
-                                                </Link>
+                                            <Link href={`/tafakkur-publishers/categories/${getCategorySlug(book)}/products/${book.slug}`}>
+                                                <Image
+                                                    width={285}
+                                                    height={260}
+                                                    className="w-100 h-100 object-fit"
+                                                    src={book.image}
+                                                    alt={book.name}
+                                                    layout="responsive"
+                                                    loading="lazy"
+                                                />
+                                            </Link>
                                         </div>
                                     ))
                                 }
@@ -118,7 +120,7 @@ export default function VersionsListing() {
                     </div>
                     <div className="shipping-bg">
                         <div className="container custom-container">
-                            <Shipping versionsTitles={true}/>
+                            <Shipping versionsTitles={true} />
                         </div>
                     </div>
                 </section>

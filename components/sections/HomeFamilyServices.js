@@ -22,7 +22,7 @@ export default function HomeFamilyServices() {
                                 <p className='mb-4'>
                                     يقدم برامج تدريبية متطورة لبناء الإنسان، ترتكز إلى أحدث نظريات الدماغ وعلم الأعصاب، وتسند إلى علم النفس الإسلامي، لفهم وتطوير أعمق لتفكير ومشاعر وسلوك الإنسان، استفاد من البرامج التدريبية آلاف الأشخاص حول العالم.
                                 </p>
-                                <Link href="/tafakkur-training" className='d-inline-flex align-items-center'>
+                                <Link href="/tafakkur-training" className='d-inline-flex align-items-center hover-outlined-btn white-btn'>
                                     اطلع على البرامج التدريبية
                                     <i className="fa-solid fa-arrow-left-long ms-2"></i>
                                 </Link>
@@ -42,7 +42,7 @@ export default function HomeFamilyServices() {
                               يقدم تفكر ناشرون أكثر من ‎60‏ إصدار لمساعدة الأطفال واليافعين في بناء شخصيتهم ليكونوا مفكرين 
  مبدعين، يشعرون بقيمتهم ومتوازنين، مؤمنين محبين لله، إيجابيين وأخلاقيين، جميع الإصدارات ترتكز إلى 
  أحدث نظريات وأبحاث الدماغ.  </p>
-                                <Link href="/tafakkur-publishers" className='d-inline-flex align-items-center'>
+                                <Link href="/tafakkur-publishers" className='d-inline-flex align-items-center hover-outlined-btn white-btn'>
                                     اطلع على الإصدارات
                                     <i className="fa-solid fa-arrow-left-long ms-2"></i>
                                 </Link>
@@ -61,7 +61,7 @@ export default function HomeFamilyServices() {
                                 <p className='mb-4'>
                                      منصة لتدريس منهاج تفكر للأبناء عن بعد ، ليستفيدوا أينما كانوا من عمق المنهاج في بناء شخصيتهم الإبداعية الأخلاقية، وبناء إيمانهم من خلال التفكر في آثار أسماء الله الحسنى لغرس محبة الله، للأعمار 6-14 سنة.
                                 </p>
-                                <Link href="/tafakkur-academy" className='d-inline-flex align-items-center'>
+                                <Link href="/tafakkur-academy" className='d-inline-flex align-items-center hover-outlined-btn white-btn'>
                                     سجل أبناءك في دورات تفكر
                                     <i className="fa-solid fa-arrow-left-long ms-2"></i>
                                 </Link>

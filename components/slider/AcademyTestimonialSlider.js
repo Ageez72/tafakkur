@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useAppContext } from "@/context/AppContext";
+import Image from 'next/image'
 // import "swiper/swiper-bundle.min.css";
 
 const swiperOptions = {

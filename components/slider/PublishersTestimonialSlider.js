@@ -1,7 +1,7 @@
 "use client";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import Image from 'next/image'
 const swiperOptions = {
   modules: [Navigation, Autoplay],
   slidesPerView: 1,

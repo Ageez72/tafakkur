@@ -47,7 +47,7 @@ export default function AcademyHero({data}) {
                                         كل مستوى مدته <span className="en-txt">8</span> شهور (حصتين أسبوعياً)
                                     </p>
                                 </div>
-                                <a href={`https://forms.zohopublic.com/tafakkur/form/20251/formperma/GbxMESJCrgI6bxxn9Ti3S5hYjFwZ3p27F8qsveDmOmY${urlParams}`} target="_blank" rel="noopener noreferrer" className="wow fadeInUp hero-button hero-hover-btn" data-wow-delay=".4s">
+                                <a href={`https://forms.zohopublic.com/tafakkur/form/20251/formperma/GbxMESJCrgI6bxxn9Ti3S5hYjFwZ3p27F8qsveDmOmY${urlParams}`} target="_blank" rel="noopener noreferrer" className="wow fadeInUp hero-button" data-wow-delay=".4s">
                                     احجز مقعد ابنك في دورة يناير <span className="en-txt">2025</span>
                                 </a>
                             </div>

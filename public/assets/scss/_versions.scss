@@ -224,6 +224,12 @@ p {
             border-radius: 7px;
             background-color: #00a78f;
             font-size: pxtorem(20);
+            transition: all 0.4s ease-in-out;
+            border: 1px solid #00a78f;;
+            &:hover {
+                color:#00a78f;
+                background-color: #fff;
+            }
         }
     }
 }

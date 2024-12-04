@@ -1,4 +1,4 @@
-
+import Image from 'next/image'
 export default function ApplyMenhag() {
     return (
         <section className='apply-menhag'>

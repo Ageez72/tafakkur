@@ -3,6 +3,7 @@ import { useAppContext } from "@/context/AppContext";
 import en from "../../locales/en.json";
 import ar from "../../locales/ar.json";
 import CounterUp from "../elements/CounterUp";
+import Image from 'next/image'
 
 export default function Achievement2({ bg, publisher, data }) {
     const { state } = useAppContext();

@@ -71,7 +71,7 @@ export default function ReviewDetails() {
                                 {
                                     bookDetails?.images?.map((image) => (
                                         <div className="book-wrapper mb-4">
-                                            <Image loading="lazy" className="w-100 border-radius-8" src={image?.image} alt={bookDetails?.name} />
+                                            <img loading="lazy" className="w-100 border-radius-8" src={image?.image} alt={bookDetails?.name} />
                                         </div>
                                     ))
                                 }
@@ -124,7 +124,7 @@ export default function ReviewDetails() {
                                     {
                                         bookDetails?.video && (
                                             <div className="video-wrapper mt-5">
-                                                <Image loading="lazy" className="w-100 border-radius-15" src={bookDetails?.video_image && bookDetails?.video_image} alt="Version poster image" />
+                                                <img loading="lazy" className="w-100 border-radius-15" src={bookDetails?.video_image && bookDetails?.video_image} alt="Version poster image" />
                                                 <VideoPopup style={3} videoId={bookDetails?.video && getYouTubeVideoID(bookDetails?.video)} />
                                             </div>
                                         )
@@ -146,7 +146,8 @@ export default function ReviewDetails() {
                                 </div>
                             </div>
                         </div>
-                        <VersionTestimonialSlider noPadding={true} data={bookDetails?.testimonials}></VersionTestimonialSlider>
+                        {bookDetails?.testimonials?.length ? <VersionTestimonialSlider noPadding={true} data={bookDetails?.testimonials}></VersionTestimonialSlider> : ""}
+                        
                     </div>
                     
                 </section>

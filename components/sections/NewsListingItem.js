@@ -25,7 +25,7 @@ export default function NewsItem({ id, title, date, categories, cover, desc }) {
         <div className="row news-content">
           <div className="col-md-3">
           <Link href={`/news/${id}`} className="col-link">
-            <Image loading="lazy" src={cover} alt="test" className="w-100" />
+            <Image width={174} height={174} loading="lazy" src={cover} alt="test" className="w-100" />
           </Link>
           </div>
           <div className="col-md-9 mt-4 mt-md-0">

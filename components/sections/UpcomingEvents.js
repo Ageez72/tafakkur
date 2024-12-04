@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import ImageSlider from "../slider/ImagesSlider";
+import Image from 'next/image'
 const imageArr = ["https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/publishers/image1.jpg", "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/publishers/image2.jpg", "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/publishers/image3.jpg"]
 import { getUrlParams } from '@/helpers';
 

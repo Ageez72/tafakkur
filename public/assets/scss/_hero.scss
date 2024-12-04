@@ -165,6 +165,20 @@
       text-align: center;
       display: inline-block;
       line-height: 47px;
+      transition: all 0.4s ease-in-out;
+
+      &:hover {
+        color: var(--themePurple);
+        background-color: #fff;
+      }
+
+      &.hero-hover-btn-outline {
+        &:hover {
+          border-color:var(--themePurple) ;
+          background-color: var(--themePurple) !important;
+          color: #fff;
+        }
+      }
     }
 
 

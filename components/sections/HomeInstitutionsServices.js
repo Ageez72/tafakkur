@@ -30,7 +30,7 @@ export default function HomeInstitutionsServices() {
                             </div>
                             <div className="col-lg-6 mt-0 slider-side pe-0">
                                 <div className="about-tafakuur-image h-100">
-                                    <img className='w-100 h-100 object-fit' src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/home/image1.jpg" alt='' />
+                                    <Image width={940} height={480} className='w-100 h-100 object-fit' src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/home/image1.jpg" alt='' />
                                 </div>
                             </div>
                         </div>

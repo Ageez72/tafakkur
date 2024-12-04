@@ -6,6 +6,7 @@ import { useAppContext } from "@/context/AppContext";
 import en from "../../../locales/en.json";
 import ar from "../../../locales/ar.json";
 import { usePathname, useRouter } from "next/navigation";
+import Image from "next/image";
 
 export default function Header({ scroll, handleOffCanvas, whiteHeader }) {
   const { state } = useAppContext();
@@ -30,7 +31,7 @@ export default function Header({ scroll, handleOffCanvas, whiteHeader }) {
       router.push(`/search-results?query=${encodeURIComponent(searchInput)}`); // navigate to /search/{input value}
     }
   };
-  const handleMobileMenu = ()=> {
+  const handleMobileMenu = () => {
     setSearchBar(false);
     handleOffCanvas()
   }
@@ -49,20 +50,32 @@ export default function Header({ scroll, handleOffCanvas, whiteHeader }) {
                   <div className="logo">
                     {whiteHeader ? (
                       <Link href="/" className="header-logo">
-                        <img
-                          src={`https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/nav/logo-color.png`}
+                        <Image
+                          width={85}
+                          height={52}
+                          src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/nav/logo-color.png"
                           alt="logo-img"
                         />
                       </Link>
                     ) : (
                       <Link href="/" className="header-logo">
-                        <img
-                          src={`${scroll
-                            ? "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/nav/logo-color.png"
-                            : "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/nav/logo.png"
-                            }`}
-                          alt="logo-img"
-                        />
+                        {
+                          scroll ? (
+                            <Image
+                              width={85}
+                              height={52}
+                              src={`https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/nav/logo-color.png`}
+                              alt="logo-img"
+                            />
+                          ) : (
+                            <Image
+                              width={85}
+                              height={52}
+                              src={`https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/nav/logo.png`}
+                              alt="logo-img"
+                            />
+                          )
+                        }
                       </Link>
                     )}
                   </div>

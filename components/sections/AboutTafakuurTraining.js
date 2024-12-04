@@ -1,4 +1,5 @@
 import ImageSlider from "../slider/ImagesSlider";
+import Image from "next/image";
 export default function AboutTafakuurTraining({data}) {
     return (
         <>
@@ -9,7 +10,7 @@ export default function AboutTafakuurTraining({data}) {
                             <div className="col-lg-4 mb-4">
                                 <div className="about-tafakuur-content pe-5 ps-4">
                                     <div className="about-tafakuur-logo mb-5 pb-4">
-                                        <img className="logo" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/categories/logo.png" alt="book icon" />
+                                        <Image width={132} height={67} className="logo" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/categories/logo.png" alt="book icon" />
                                     </div>
                                     <h5 className="about-tafakuur-title mb-4">عن تفكر للتدريب</h5>
                                     <p className="about-tafakuur-desc">

@@ -1,6 +1,7 @@
 import VideoPopup from "../elements/VideoPopup";
 import { getYouTubeVideoID, getUrlParams } from "@/helpers";
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
+import Image from "next/image";
 
 export default function AboutAcademy({data}) {
     const [urlParams, setUrlParams] = useState("");
@@ -15,7 +16,7 @@ export default function AboutAcademy({data}) {
             <div className="container custom-container">
                 <div className="row align-items-center about-publishers-content">
                     <div className="col-12 col-md-2 text-center mb-lg-0 mb-4">
-                        <img className="w-100 max-150" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/tafakkurAcademy/orange-logo.png" alt="logo-color" />
+                        <Image width={145} height={85} className="w-100 max-150" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/tafakkurAcademy/orange-logo.png" alt="logo-color" />
                     </div>
                     <div className="col-12 col-md-10 ps-5 text-side">
                         <h3 className="mb-3">عن أكاديمية تفكر </h3>

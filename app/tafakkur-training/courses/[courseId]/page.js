@@ -9,6 +9,8 @@ import { useAppContext } from "@/context/AppContext";
 import en from "../../../../locales/en.json";
 import ar from "../../../../locales/ar.json";
 import { getYouTubeVideoID, formatDate, wrapNumbersInSpan, getUrlParams } from "@/helpers";
+import Image from "next/image";
+
 export default function course({ params }) {
     const [activeTab, setActiveTab] = useState("whatLearn");
     const { state } = useAppContext();
@@ -240,7 +242,7 @@ export default function course({ params }) {
                                 <div className="col-12 col-md-6 h-100 image-side video-wrapper p-0">
                                     <VideoPopup style={3} videoId={courseData?.course.url && getYouTubeVideoID(courseData?.course.url)} />
                                     <img className="w-100 h-100 object-fit" src={`${courseData?.course.author_image || "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/training/course.jpg"}`} alt="course" />
-                                    <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/achievement/shape.png" className="shape" alt="shape" />
+                                    <Image width={85} height={68} src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/achievement/shape.png" className="shape" alt="shape" />
                                 </div>
                             </div>
                         </div>

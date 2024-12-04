@@ -615,10 +615,12 @@ textarea {
 
 .fade-img {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 50% !important;
+  left: 50% !important;
   transform: translate(-50%, -50%);
-  width: 15%;
+  width: 15% !important;
+  right: auto !important;
+  height: auto !important;
   opacity: 0;
   animation: fade 4s infinite;
 }

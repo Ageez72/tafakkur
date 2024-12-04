@@ -16,7 +16,7 @@ export default function AnosLevelsEffects({ data }) {
                             <div className="col-12 col-md-6 col-lg-4 my-3 col-wrapper">
                                 <div className="level-side">
                                     <div className="card-avatar">
-                                        <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/1.jpg" alt="avatar image" />                                    </div>
+                                        <Image fill={true} src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/1.jpg" alt="avatar image" />                                    </div>
                                     <div className="card-hover-cover">
                                         <h3 className="white-txt">المستوى الأول</h3>
                                         <h3 className="white-txt my-3">أنا إنسان مميز</h3>
@@ -31,7 +31,7 @@ export default function AnosLevelsEffects({ data }) {
                             <div className="col-12 col-md-6 col-lg-4 my-3 col-wrapper">
                                 <div className="level-side">
                                     <div className="card-avatar">
-                                        <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/2.jpg" alt="avatar image" />                                    </div>
+                                        <Image fill={true} src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/2.jpg" alt="avatar image" />                                    </div>
                                     <div className="card-hover-cover">
                                         <h3 className="white-txt">المستوى الثاني</h3>
                                         <h3 className="white-txt my-3">أنا أحبكم</h3>
@@ -42,7 +42,7 @@ export default function AnosLevelsEffects({ data }) {
                             <div className="col-12 col-md-6 col-lg-4 my-3 col-wrapper">
                                 <div className="level-side">
                                     <div className="card-avatar">
-                                        <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/3.jpg" alt="avatar image" />
+                                        <Image fill={true} src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/3.jpg" alt="avatar image" />
                                     </div>
                                     <div className="card-hover-cover">
                                         <h3 className="white-txt">المستوى الثالث</h3>
@@ -54,7 +54,7 @@ export default function AnosLevelsEffects({ data }) {
                             <div className="col-12 col-md-6 col-lg-4 my-3 col-wrapper">
                                 <div className="level-side">
                                     <div className="card-avatar">
-                                        <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/4.jpg" alt="avatar image" />
+                                        <Image fill={true} src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/4.jpg" alt="avatar image" />
                                     </div>
                                     <div className="card-hover-cover">
                                         <h3 className="white-txt">المستوى الرابع</h3>
@@ -66,7 +66,7 @@ export default function AnosLevelsEffects({ data }) {
                             <div className="col-12 col-md-6 col-lg-4 my-3 col-wrapper">
                                 <div className="level-side">
                                     <div className="card-avatar">
-                                        <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/5.jpg" alt="avatar image" />
+                                        <Image fill={true} src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/5.jpg" alt="avatar image" />
                                     </div>
                                     <div className="card-hover-cover">
                                         <h3 className="white-txt">المستوى الخامس</h3>
@@ -78,7 +78,7 @@ export default function AnosLevelsEffects({ data }) {
                             <div className="col-12 col-md-6 col-lg-4 my-3 col-wrapper">
                                 <div className="level-side">
                                     <div className="card-avatar">
-                                        <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/تفكر-مع-انوس-انجليزي.png" alt="avatar image" />
+                                        <Image fill={true} src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/تفكر-مع-انوس-انجليزي.png" alt="avatar image" />
                                     </div>
                                     <div className="card-hover-cover">
                                         <h3 className="white-txt">المستويات الخمس</h3>
@@ -113,13 +113,13 @@ export default function AnosLevelsEffects({ data }) {
             <div className="anos-effects">
                 <div className="container">
                     <div className="row align-items-center justify-content-between">
-                        <div className="col-12 col-md-3 ps-md-5">
-                            <div className="wow fadeInUp video-wrapper" data-wow-delay=".4s">
+                        <div className="col-12 col-lg-4 col-xl-3 ps-md-5 img-side">
+                            <div className="wow fadeInUp video-wrapper text-center" data-wow-delay=".4s">
                                 <VideoPopup shapeIcon={true} style={3} videoId={data && data[1]?.video && getYouTubeVideoID(data[1].video)} />
-                                <img className="w-100" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/effects.jpg" alt="avatar image" />
+                                <Image width={235} height={300} src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/effects.jpg" alt="avatar image" />
                             </div>
                         </div>
-                        <div className="col-12 col-md-9 ps-3 ps-md-5">
+                        <div className="col-12 col-lg-8 col-xl-9 ps-3 ps-md-5">
                             <p> نضمن لك ظهور التغيرات الإيجابية منذ العام الأول في التطبيق بإذن الله</p>
                             <h2 className="head-blue mt-3 mb-4">ما التغيرات الإيجابية التي ستظهر
                                 على طلابك؟</h2>

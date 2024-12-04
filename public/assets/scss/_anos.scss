@@ -155,6 +155,8 @@
         position: relative;
         border-radius: 8px;
         overflow: hidden;
+        width: 100%;
+        height: 200px;
 
         &:hover {
             .card-hover-cover {
@@ -179,6 +181,9 @@
         }
 
         .card-avatar {
+            position: relative;
+            width: 100%;
+            height: 100%;
             img {
                 width: 100%;
                 // height: 202px;
@@ -188,17 +193,17 @@
 
     .anos-effects {
         padding: 50px 0;
-
-        .video-wrapper {
-            @media (max-width:767px) {
-                height: 400px;
-                text-align: center;
+        .img-side {
+            height: 300px;
+            @media (max-width:992px) {
                 margin-bottom: 30px;
+            }
+        }
+        .video-wrapper {
+            height: 300px;
 
-                img {
-                    width: auto !important;
-                    height: 100%;
-                }
+            .video-btn {
+                z-index: 9;
             }
         }
     }
@@ -266,7 +271,7 @@
     }
 
     .title-image {
-        height: 45px;
+        // height: 45px;
         margin-bottom: 20px;
     }
 

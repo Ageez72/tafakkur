@@ -40,7 +40,6 @@ export default function Categories({ type }) {
                   <div className="col-lg-3 col-md-6 text-center wow fadeInUp" data-wow-delay=".75s">
                     <div className="category-icon mb-4">
                       <i className="fa-solid fa-file-certificate"></i>
-                      {/* <img src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/categories/file-certificate.jpg" alt="file certificate icon" /> */}
                     </div>
                     <h3 className="category-title mb-1">شهادة معتمدة</h3>
                     <p className="category-desc">تدعم مسيرتك المهنية</p>

@@ -722,10 +722,12 @@ textarea {
 
 .fade-img {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 50% !important;
+  left: 50% !important;
   transform: translate(-50%, -50%);
-  width: 15%;
+  width: 15% !important;
+  right: auto !important;
+  height: auto !important;
   opacity: 0;
   animation: fade 4s infinite;
 }
@@ -4815,6 +4817,13 @@ p {
   z-index: 1;
 }
 
+.home-about .action-buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 .about-history {
   background-color: var(--themeBlueDark);
 }
@@ -4826,7 +4835,7 @@ p {
 }
 
 .home-family-services .cover {
-  height: 230px;
+  height: 250px;
 }
 .home-family-services .content > img {
   width: 300px;
@@ -4884,7 +4893,7 @@ p {
 }
 .home-quote .maha {
   position: absolute;
-  top: -120px;
+  top: -117px;
   left: 0;
   height: 460px;
 }
@@ -5268,6 +5277,8 @@ p {
   position: relative;
   border-radius: 8px;
   overflow: hidden;
+  width: 100%;
+  height: 200px;
 }
 .anos-levels-effects .level-side:hover .card-hover-cover {
   background: #83296b;
@@ -5287,22 +5298,30 @@ p {
   transition: all 0.4s ease;
   opacity: 0;
 }
+.anos-levels-effects .level-side .card-avatar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 .anos-levels-effects .level-side .card-avatar img {
   width: 100%;
 }
 .anos-levels-effects .anos-effects {
   padding: 50px 0;
 }
-@media (max-width: 767px) {
-  .anos-levels-effects .anos-effects .video-wrapper {
-    height: 400px;
-    text-align: center;
+.anos-levels-effects .anos-effects .img-side {
+  height: 300px;
+}
+@media (max-width: 992px) {
+  .anos-levels-effects .anos-effects .img-side {
     margin-bottom: 30px;
   }
-  .anos-levels-effects .anos-effects .video-wrapper img {
-    width: auto !important;
-    height: 100%;
-  }
+}
+.anos-levels-effects .anos-effects .video-wrapper {
+  height: 300px;
+}
+.anos-levels-effects .anos-effects .video-wrapper .video-btn {
+  z-index: 9;
 }
 
 .anos-courses .course-container {
@@ -5355,7 +5374,6 @@ p {
   padding-bottom: 30px;
 }
 .anos-hero-slider-wrapper .title-image {
-  height: 45px;
   margin-bottom: 20px;
 }
 .anos-hero-slider-wrapper h2 {

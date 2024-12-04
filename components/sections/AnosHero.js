@@ -57,7 +57,7 @@ export default function AnosHero() {
                   <div className="testimonial-content">
                     <div className="row align-items-center">
                       <div className="col-12 col-lg-6 mb-4">
-                        <img
+                        <Image width={170} height={43}
                           className="title-image"
                           src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/title.jpg"
                           alt="avatar image"
@@ -127,7 +127,7 @@ export default function AnosHero() {
                   <div className="testimonial-content">
                     <div className="row align-items-center">
                       <div className="col-12 col-lg-6 mb-4">
-                        <img
+                        <Image width={170} height={43}
                           className="title-image"
                           src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/title.jpg"
                           alt="avatar image"
@@ -197,7 +197,7 @@ export default function AnosHero() {
                   <div className="testimonial-content">
                     <div className="row align-items-center">
                       <div className="col-12 col-lg-6 mb-4">
-                        <img
+                        <Image width={170} height={43}
                           className="title-image"
                           src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/title.jpg"
                           alt="avatar image"
@@ -267,7 +267,7 @@ export default function AnosHero() {
                   <div className="testimonial-content">
                     <div className="row align-items-center">
                       <div className="col-12 col-lg-6 mb-4">
-                        <img
+                        <Image width={170} height={43}
                           className="title-image"
                           src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/title.jpg"
                           alt="avatar image"
@@ -337,7 +337,7 @@ export default function AnosHero() {
                   <div className="testimonial-content">
                     <div className="row align-items-center">
                       <div className="col-12 col-lg-6 mb-4">
-                        <img
+                        <Image width={170} height={43}
                           className="title-image"
                           src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/title.jpg"
                           alt="avatar image"
@@ -407,7 +407,7 @@ export default function AnosHero() {
                   <div className="testimonial-content">
                     <div className="row align-items-center">
                       <div className="col-12 col-lg-6 mb-4">
-                        <img
+                        <Image width={170} height={43}
                           className="title-image"
                           src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/title.jpg"
                           alt="avatar image"

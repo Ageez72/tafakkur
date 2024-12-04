@@ -45,7 +45,7 @@ export default function PublishersHero({ data }) {
                         </div>
                         <div className="col-lg-5">
                             <div className="hero-image wow fadeInUp" data-wow-delay=".4s">
-                                <Image src={data?.image} alt="hero-img" />
+                                <Image width={300} height={245} src={data?.image} alt="hero-img" />
                             </div>
                         </div>
                     </div>

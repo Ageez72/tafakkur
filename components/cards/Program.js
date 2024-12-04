@@ -1,4 +1,5 @@
-import Link from "next/link"
+import Link from "next/link";
+import Image from "next/image";
 
 function Program({ data, title }) {
     console.log(data);
@@ -32,7 +33,7 @@ function Program({ data, title }) {
                             <div className='program-details row'>
                                 <div className='col-4'>
                                     <div className='total-sessions d-flex align-items-center'>
-                                        <img src='https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/program/chalkboard-user.png' alt='total sessions' />
+                                        <Image width={15} height={12.5} src='https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/program/chalkboard-user.png' alt='total sessions' />
                                         <p>
                                             <span className="en-txt">{data?.sessions_count}</span>
                                             محاضرات</p>
@@ -40,7 +41,7 @@ function Program({ data, title }) {
                                 </div>
                                 <div className='col-4'>
                                     <div className='total-hours d-flex align-items-center'>
-                                        <img src='https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/program/clock.png' alt='total hours' />
+                                        <Image width={15} height={12.5} src='https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/program/clock.png' alt='total hours' />
                                         <p>
                                             <span className="en-txt">{data?.hours_count}</span>
                                             ساعة</p>
@@ -48,7 +49,7 @@ function Program({ data, title }) {
                                 </div>
                                 <div className='col-4'>
                                     <div className='total-students d-flex align-items-center'>
-                                        <img src='https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/program/users.png' alt='total students' />
+                                        <Image width={15} height={12.5} src='https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/program/users.png' alt='total students' />
                                         <p>
                                             <span className="en-txt me-1">{data?.trainees_count}</span>
                                             متدرب</p>

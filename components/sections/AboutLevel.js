@@ -1,6 +1,7 @@
 import VideoPopup from "../elements/VideoPopup"
 import { formatDate } from "@/helpers";
 import { getYouTubeVideoID } from "@/helpers";
+import Image from "next/image";
 
 export default function AboutLevel({ data, level }) {
 
@@ -8,7 +9,7 @@ export default function AboutLevel({ data, level }) {
         <div className="about-publishers academy">
             <div className="section-padding academy-list-review pb-0">
                 <div className="container custom-container position-relative pb-80">
-                    <img className="shape right" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/tafakkurAcademy/shape.png" alt="shape" />
+                    <Image width={85} height={68} className="shape right" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/tafakkurAcademy/shape.png" alt="shape" />
                     <h2 className="head-blue mb-4">تفاصيل الوقت والمكان</h2>
                     <p className="black-txt mb-5">ابتداءً من <span>{data?.next_date && formatDate(data?.next_date )}</span> ولمدة ثمانية أشهر بمعدّل حصتين أسبوعياً
                         عن بعد عبر <span className="en-txt">Zoom</span> في الأوقات التالية</p>

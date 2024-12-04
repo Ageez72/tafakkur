@@ -3,7 +3,7 @@ export default function ApplyMenhag() {
     return (
         <section className='apply-menhag'>
             <div className="container section-padding position-relative">
-                <img className="shape top" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/shape.png" alt="shape" />
+                <Image width={85} height={68} className="shape top" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/shape.png" alt="shape" />
                 <h2 className='head-blue text-center mb-5'>
                     طبق منهاج تفكر في مؤسستك واحصل على
                 </h2>

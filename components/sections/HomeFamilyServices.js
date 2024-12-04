@@ -1,4 +1,5 @@
-import Link from 'next/link'
+import Link from 'next/link';
+import Image from 'next/image';
 import React from 'react'
 
 export default function HomeFamilyServices() {
@@ -13,10 +14,10 @@ export default function HomeFamilyServices() {
                     <div className='col-12 col-lg-4 px-0 blue'>
                         <div className='cover position-relative'>
                             <div className='overlay op30'></div>
-                            <img className='w-100 h-100 object-fit' src='https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/home/image2.jpg' alt='image' />
+                            <Image width={635} height={250} className='w-100 h-100 object-fit' src='https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/home/image2.jpg' alt='image' />
                         </div>
                         <div className='content blue'>
-                            <img className='logo' src='https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/home/logo-blue.png' alt='image' />
+                            <Image width={300} height={150} className='logo' src='https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/home/logo-blue.png' alt='image' />
                             <div className='desc'>
                                 <p className='mb-4'>
                                     يقدم برامج تدريبية متطورة لبناء الإنسان، ترتكز إلى أحدث نظريات الدماغ وعلم الأعصاب، وتسند إلى علم النفس الإسلامي، لفهم وتطوير أعمق لتفكير ومشاعر وسلوك الإنسان، استفاد من البرامج التدريبية آلاف الأشخاص حول العالم.
@@ -32,10 +33,10 @@ export default function HomeFamilyServices() {
                     <div className='col-12 col-lg-4 px-0 green'>
                         <div className='cover position-relative'>
                             <div className='overlay op30'></div>
-                            <img className='w-100 h-100 object-fit' src='https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/home/image3.jpg' alt='image' />
+                            <Image width={635} height={250} className='w-100 h-100 object-fit' src='https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/home/image3.jpg' alt='image' />
                         </div>
                         <div className='content green'>
-                            <img className='logo' src='https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/home/logo-green.png' alt='image' />
+                            <Image width={300} height={150} className='logo' src='https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/home/logo-green.png' alt='image' />
                             <div className='desc'>
                                 <p className='mb-4'>
                               يقدم تفكر ناشرون أكثر من ‎60‏ إصدار لمساعدة الأطفال واليافعين في بناء شخصيتهم ليكونوا مفكرين 
@@ -52,10 +53,10 @@ export default function HomeFamilyServices() {
                     <div className='col-12 col-lg-4 px-0 orange'>
                         <div className='cover position-relative'>
                             <div className='overlay op30'></div>
-                            <img className='w-100 h-100 object-fit' src='https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/home/image4.jpg' alt='image' />
+                            <Image width={635} height={250} className='w-100 h-100 object-fit' src='https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/home/image4.jpg' alt='image' />
                         </div>
                         <div className='content orange'>
-                            <img className='logo' src='https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/home/logo-orange.png' alt='image' />
+                            <Image width={300} height={150} className='logo' src='https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/home/logo-orange.png' alt='image' />
                             <div className='desc'>
                                 <p className='mb-4'>
                                      منصة لتدريس منهاج تفكر للأبناء عن بعد ، ليستفيدوا أينما كانوا من عمق المنهاج في بناء شخصيتهم الإبداعية الأخلاقية، وبناء إيمانهم من خلال التفكر في آثار أسماء الله الحسنى لغرس محبة الله، للأعمار 6-14 سنة.

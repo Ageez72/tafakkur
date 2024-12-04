@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import { getUrlParams } from '@/helpers';
+import Image from 'next/image';
 
 export default function Shipping({versionsTitles}) {
     const [urlParams, setUrlParams] = useState(null);
@@ -31,7 +32,7 @@ export default function Shipping({versionsTitles}) {
                 </div>
                 <div className='col-md-5 mt-md-0'>
                     <div className=' mt-5'>
-                        <img className='w-100' src='https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/versions/shipping.png' />
+                        <Image width={415} height={155} className='w-100' src='https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/versions/shipping.png' />
                     </div>
                 </div>
             </div>

@@ -28,7 +28,7 @@ export default function AcademyTestimonialSlider({ data }) {
       {data && (
         <div className="academy-testimonial-wrapper testimonial-wrapper">
           <div className="testimonial-bg">
-            <img className="shape" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/tafakkurAcademy/shape.png" alt="shape" />
+            <Image width={85} height={68} className="shape" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/tafakkurAcademy/shape.png" alt="shape" />
             <div className="container custom-container">
               <div className="swiper testimonial-slider">
                 <Swiper {...swiperOptions} className="swiper-wrapper wow fadeInUp" data-wow-delay=".5s">

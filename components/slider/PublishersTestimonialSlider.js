@@ -25,7 +25,7 @@ export default function PublishersTestimonialSlider({data}) {
       {data && (
       <div className="publishers-testimonial-wrapper testimonial-wrapper">
         <div className="testimonial-bg">
-        <img className="shape" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/versions/shape.png" alt="sahpe"/>
+        <Image width={85} height={68} className="shape" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/versions/shape.png" alt="sahpe"/>
           <div className="overlay"></div>
           <div className="container custom-container">
             <div className="swiper testimonial-slider">

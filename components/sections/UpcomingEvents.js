@@ -25,7 +25,7 @@ export default function UpcomingEvents({ data }) {
                         </div>
                         <div className="col-12 col-md-6 slider-side p-0">
                             <div className="col-12 col-md-6 position-relative w-100 h-100">
-                                <img className="shape" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/versions/shape.png" alt="sahpe" />
+                                <Image width={85} height={68} className="shape" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/versions/shape.png" alt="sahpe" />
                                 <ImageSlider images={imageArr} />
                             </div>
                         </div>

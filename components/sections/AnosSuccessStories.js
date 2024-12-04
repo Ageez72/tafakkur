@@ -1,4 +1,4 @@
-import ImageSlider from "../slider/ImagesSlider";
+import Image from "next/image";
 import Link from "next/link";
 const imageArr = ["https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/categories/image1.jpg", "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/categories/image2.jpg", "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/categories/image3.jpg", "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/categories/image4.jpg"]
 export default function AnosSuccessStories() {
@@ -26,7 +26,7 @@ export default function AnosSuccessStories() {
                             <div className="col-lg-8 mt-0 pe-0">
                             <div className="slider-side">
                                 <div className="about-tafakuur-image h-100">
-                                    <img className="w-100 h-100 object-fit" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/story.jpg" alt="success story" />
+                                    <Image width={933} height={313} className="w-100 h-100 object-fit" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/story.jpg" alt="success story" />
                                 </div>
                             </div>
                             </div>

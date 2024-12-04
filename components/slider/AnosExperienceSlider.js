@@ -1,10 +1,9 @@
 "use client";
-import { useEffect, useState } from "react";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
 
 export default function AnosExperienceSlider({ cols }) {
-    const [data, setData] = useState(null);
 
     const swiperOptions = {
         modules: [Pagination, Autoplay],
@@ -33,47 +32,47 @@ export default function AnosExperienceSlider({ cols }) {
                             {/* {data.data.map((brand, index) => ( */}
                             <SwiperSlide>
                                 <div className="testimonial-content text-center">
-                                    <img className="exp-img mb-2" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/قسم-التطوير-قيم-1.jpg" alt="exp 1" />
+                                    <Image width={500} height={300} className="exp-img mb-2" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/قسم-التطوير-قيم-1.jpg" alt="exp 1" />
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="testimonial-content text-center">
-                                    <img className="exp-img mb-2" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/قسم-التطوير-قيم-2.jpg" alt="exp 1" />
+                                    <Image width={500} height={300} className="exp-img mb-2" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/قسم-التطوير-قيم-2.jpg" alt="exp 1" />
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="testimonial-content text-center">
-                                    <img className="exp-img mb-2" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/قسم-التطوير-قيم-3.jpg" alt="exp 1" />
+                                    <Image width={500} height={300} className="exp-img mb-2" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/قسم-التطوير-قيم-3.jpg" alt="exp 1" />
                                 </div>
                             </SwiperSlide>
                                 <SwiperSlide>
                                 <div className="testimonial-content text-center">
-                                    <img className="exp-img mb-2" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/قسم-التطوير-قيم-4.jpg" alt="exp 1" />
+                                    <Image width={500} height={300} className="exp-img mb-2" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/قسم-التطوير-قيم-4.jpg" alt="exp 1" />
                                 </div>
                             </SwiperSlide>
                                 <SwiperSlide>
                                 <div className="testimonial-content text-center">
-                                    <img className="exp-img mb-2" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/قسم-التطوير-قيم-5.jpg" alt="exp 1" />
+                                    <Image width={500} height={300} className="exp-img mb-2" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/قسم-التطوير-قيم-5.jpg" alt="exp 1" />
                                 </div>
                             </SwiperSlide>
                                 <SwiperSlide>
                                 <div className="testimonial-content text-center">
-                                    <img className="exp-img mb-2" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/قسم-التطوير-قيم-6.jpg" alt="exp 1" />
+                                    <Image width={500} height={300} className="exp-img mb-2" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/قسم-التطوير-قيم-6.jpg" alt="exp 1" />
                                 </div>
                             </SwiperSlide>
                                 <SwiperSlide>
                                 <div className="testimonial-content text-center">
-                                    <img className="exp-img mb-2" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/قسم-التطوير-قيم-7.jpg" alt="exp 1" />
+                                    <Image width={500} height={300} className="exp-img mb-2" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/قسم-التطوير-قيم-7.jpg" alt="exp 1" />
                                 </div>
                             </SwiperSlide>
                                 <SwiperSlide>
                                 <div className="testimonial-content text-center">
-                                    <img className="exp-img mb-2" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/قسم-التطوير-قيم-8.jpg" alt="exp 1" />
+                                    <Image width={500} height={300} className="exp-img mb-2" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/قسم-التطوير-قيم-8.jpg" alt="exp 1" />
                                 </div>
                             </SwiperSlide>
                                 <SwiperSlide>
                                 <div className="testimonial-content text-center">
-                                    <img className="exp-img mb-2" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/قسم-التطوير-قيم-9.jpg" alt="exp 1" />
+                                    <Image width={500} height={300} className="exp-img mb-2" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/قسم-التطوير-قيم-9.jpg" alt="exp 1" />
                                 </div>
                             </SwiperSlide>
         

@@ -28,7 +28,7 @@ export default function ArticlesListingItem({ id, title, date, categories, cover
         <div className="row news-content">
           <div className="col-md-3">
           <Link href={`/articles/${id}`} className="col-link">
-            <img src={cover} alt="test" className="w-100" />
+            <img src={cover} alt="cover" className="w-100" />
           </Link>
           </div>
           <div className="col-md-9 mt-4 mt-md-0">

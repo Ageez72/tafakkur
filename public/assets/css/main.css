@@ -4843,13 +4843,13 @@ p {
   border-radius: 8px;
   border: 1px solid var(--white);
 }
-.home-family-services .content.blue {
+.home-family-services .blue {
   background-color: #2D45A0;
 }
-.home-family-services .content.green {
+.home-family-services .green {
   background-color: #00a88f;
 }
-.home-family-services .content.orange {
+.home-family-services .orange {
   background-color: #ff9016;
 }
 

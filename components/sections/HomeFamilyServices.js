@@ -10,7 +10,7 @@ export default function HomeFamilyServices() {
             </div>
             <div className='container-fluid'>
                 <div className='row mt-5'>
-                    <div className='col-12 col-lg-4 px-0'>
+                    <div className='col-12 col-lg-4 px-0 blue'>
                         <div className='cover position-relative'>
                             <div className='overlay op30'></div>
                             <img className='w-100 h-100 object-fit' src='https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/home/image2.jpg' alt='image' />
@@ -29,7 +29,7 @@ export default function HomeFamilyServices() {
                         </div>
                     </div>
 
-                    <div className='col-12 col-lg-4 px-0'>
+                    <div className='col-12 col-lg-4 px-0 green'>
                         <div className='cover position-relative'>
                             <div className='overlay op30'></div>
                             <img className='w-100 h-100 object-fit' src='https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/home/image3.jpg' alt='image' />
@@ -49,7 +49,7 @@ export default function HomeFamilyServices() {
                         </div>
                     </div>
 
-                    <div className='col-12 col-lg-4 px-0'>
+                    <div className='col-12 col-lg-4 px-0 orange'>
                         <div className='cover position-relative'>
                             <div className='overlay op30'></div>
                             <img className='w-100 h-100 object-fit' src='https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/home/image4.jpg' alt='image' />

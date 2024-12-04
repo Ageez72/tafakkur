@@ -60,7 +60,7 @@ export default function AnosTestimonialSlider({ cols, data }) {
                                                         <i className="fa-solid fa-star"></i>
                                                     </div>
                                                 </div>
-                                                <img className="person-img mb-3" src={testimonial.author_image} alt={testimonial.author_name} />
+                                                {/* <img className="person-img mb-3" src={testimonial.author_image} alt={testimonial.author_name} />*/}
                                                 <p className="testimonial-person-name">{testimonial.author_name} </p>
                                                 <p className="testimonial-person-position">{testimonial.author_position}</p>
                                             </div>

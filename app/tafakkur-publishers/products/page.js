@@ -3,6 +3,7 @@ import { useState, useEffect, Suspense } from "react";
 import Layout from "@/components/layout/Layout";
 import Filter from "@/components/sections/Filter";
 import Shipping from "@/components/sections/Shipping";
+import Image from 'next/image';
 import Link from 'next/link';
 import { useAppContext } from "@/context/AppContext";
 import en from "../../../locales/en.json";
@@ -86,7 +87,7 @@ export default function VersionsListing() {
                 bannerBg="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/versions/bg.jpg"
                 versionsBtn="احصل على الإصدارات الآن"
                 allVersionsDesc="اختر من مجموعة الإصدارات الواسعة التي تلبي احتياجات أبنائك! "
-                btnRoute="/tafakkur-publishers/products"
+                btnRoute="https://forms.zohopublic.com/tafakkur/form/Untitled5/formperma/xbumF0HBgyi7ZpN5ZWjsHpn9jR5OODt5RsJ3RoTY5IA"
                 loader={loading}
             >
                 <section className="version-details section-padding pb-0">
@@ -100,7 +101,13 @@ export default function VersionsListing() {
                                     booksData?.map((book) => (
                                         <div className='item-col col-md-6 col-lg-4 col-xl-3 col-12 mb-4' key={book.id}>
                                                 <Link href={`/tafakkur-publishers/categories/${getCategorySlug(book)}/products/${book.slug}`}>
-                                                    <img className="w-100 h-100 object-fit" src={book.image} alt={book.name} />
+                                                    <Image 
+                                                        className="w-100 h-100 object-fit" 
+                                                        src={book.image} 
+                                                        alt={book.name} 
+                                                        layout="responsive"
+                                                        loading="lazy" 
+                                                    />
                                                 </Link>
                                         </div>
                                     ))

@@ -66,7 +66,7 @@ export default function page({ params }) {
         fetchData();
     }, [state.LANG]);  
     // Replace with your phone number (including country code, but without + or 00)
-    const phoneNumber = '059647885';
+    const phoneNumber = '962790317731';
     // Create the WhatsApp link
     const whatsappUrl = `https://wa.me/${phoneNumber}`;    
     
@@ -125,30 +125,30 @@ export default function page({ params }) {
                                     <h4 className="head-blue">تفاعلي عبر <span className="en-txt">Zoom</span></h4>
                                     <div className="price-wrap en-txt">
                                         <span className="price">$</span>
-                                        <span className="price">320</span>
+                                        <span className="price">{coursesData?.level?.price}</span>
                                     </div>
                                     <h5 className="mb-3">*خصم خاص للإخوة</h5>
                                     <h5 className="mb-4">*يتوفر الدفع بالتقسيط</h5>
                                     <div className="card-info mb-5">
                                         <ul>
                                             <li>
-                                                حضور المحاضرات بشكل مباشر وتفاعلي مع المدربة
+                                                <span className="en-txt">64</span> حصة تفكر (تقريباً) مع معلمات الإبداع
+                                            </li>
+                                           <li>
+                                                 كتاب للطالب
                                             </li>
                                             <li>
-                                                مجموعة تفاعلية للمتدربين على <span className="en-txt">Whatsapp</span>
+                                                كتيب للأهل للمستويات الثلاث الأولى
                                             </li>
                                             <li>
-                                                ملزمة تدريب رقمية (مادة الدورة)
+                                                شحن كتاب الطالب لباب المنزل في أي دولة
                                             </li>
-                                            <li>
-                                                إتاحة التسجيلات ل٦شهور على منصة التدريب الإلكتروني
-                                            </li>
-                                            <li>
-                                                شهادة رقمية معتمدة مع رقم تسلسلي
+                                              <li>
+                                                شهادة رقمية عند إنهاء المستوى
                                             </li>
                                         </ul>
                                     </div>
-                                    <a className="wow fadeInUp hover-btn" data-wow-delay=".4s" href={`#${urlParams}`}>احجز مقعد طفلك</a>
+                                    <a className="wow fadeInUp hover-btn" data-wow-delay=".4s" href={`https://forms.zohopublic.com/tafakkur/form/20251/formperma/GbxMESJCrgI6bxxn9Ti3S5hYjFwZ3p27F8qsveDmOmY${urlParams}`}>احجز مقعد طفلك</a>
                                 </div>
                             </div>
                         </div>

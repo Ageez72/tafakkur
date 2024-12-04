@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useAppContext } from "@/context/AppContext";
 import en from "../../locales/en.json";
 import ar from "../../locales/ar.json";
@@ -13,7 +14,7 @@ export default function PublishersHero({ data }) {
     const [infoData, setInfoData] = useState(null);
 
     // Replace with your phone number (including country code, but without + or 00)
-    const phoneNumber = '01027296196';
+    const phoneNumber = '962790727220';
 
     // Create the WhatsApp link
     const whatsappUrl = `https://wa.me/${phoneNumber}`;    
@@ -44,7 +45,7 @@ export default function PublishersHero({ data }) {
                         </div>
                         <div className="col-lg-5">
                             <div className="hero-image wow fadeInUp" data-wow-delay=".4s">
-                                <img src={data?.image} alt="hero-img" />
+                                <Image src={data?.image} alt="hero-img" />
                             </div>
                         </div>
                     </div>

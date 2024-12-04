@@ -432,7 +432,7 @@ textarea {
 }
 
 .line-height-p {
-  line-height: 43px;
+  line-height: 1.6;
 }
 
 .max-150 {
@@ -465,7 +465,7 @@ textarea {
   display: none;
 }
 .white-video-btn.video-btn i {
-  color: #56538B;
+  color: #56538b;
   font-size: 20px;
   margin-top: 15px;
 }
@@ -524,7 +524,7 @@ textarea {
   position: absolute;
   top: 7px;
   right: 0;
-  color: #FF8F15;
+  color: #ff8f15;
 }
 .list.level-bullet li {
   color: #a3afc1;
@@ -624,7 +624,7 @@ textarea {
   position: absolute;
   right: 0;
   top: 0;
-  color: #251F67;
+  color: #251f67;
 }
 #cost .price-card.recommend {
   position: relative;
@@ -635,7 +635,7 @@ textarea {
   content: "";
   width: 100%;
   height: 5px;
-  background-color: #2D45A0;
+  background-color: #2d45a0;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -775,11 +775,11 @@ a:hover {
   bottom: 0;
 }
 .square-swiper-pagination .swiper-pagination .swiper-pagination-bullet {
-  background-color: #C9C7F9;
+  background-color: #c9c7f9;
 }
 .square-swiper-pagination .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   transform: rotate(45deg);
-  background-color: #5046E4;
+  background-color: #5046e4;
 }
 
 @font-face {

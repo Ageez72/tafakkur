@@ -10,6 +10,7 @@ $fa: "Font Awesome 6 Free";
 html {
   font-size: 13.5px;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -689,6 +690,19 @@ a {
       &.swiper-pagination-bullet-active {
         transform: rotate(45deg);
         background-color: #5046e4;
+      }
+    }
+  }
+}
+
+.modal-video {
+  &.height-dem {
+    .modal-video-body {
+      max-width: 650px;
+      .modal-video-inner {
+        .modal-video-movie-wrap {
+          padding-bottom: 80vh !important;
+        }
       }
     }
   }

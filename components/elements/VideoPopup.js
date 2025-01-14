@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ModalVideo from "react-modal-video";
 import { useAppContext } from "@/context/AppContext";
 import en from "../../locales/en.json";
@@ -11,6 +11,34 @@ export default function VideoPopup({ style, videoId, color, shapeIcon, title, vi
   const { state } = useAppContext();
   const translation = state.LANG === "en" ? en : ar;
   const [isOpen, setOpen] = useState(false);
+  const [ratioClass, setRatioClass] = useState(""); // To store the class based on ratio
+
+  const checkRatioParameter = (videoId) => {
+    const videoModelElement = document.querySelector(".modal-video");
+    
+    // Check if videoId contains the ratio query parameter
+    const ratioParam = videoId.split("?")[1];
+    if (ratioParam) {
+      const ratio = new URLSearchParams(ratioParam).get("ratio");
+      if (ratio === "width" && ratioClass !== "width-dem") {        
+        videoModelElement?.classList.add("width-dem");
+      } else if (ratio === "height" && ratioClass !== "height-dem") {
+        videoModelElement?.classList.add("height-dem");
+      } else if (!ratio) {
+        videoModelElement?.classList.remove("width-dem");
+        videoModelElement?.classList.remove("height-dem");
+      }
+    } else {
+      videoModelElement?.classList.remove("width-dem");
+      videoModelElement?.classList.remove("height-dem");
+    }
+  };
+
+  useEffect(() => {
+    if (videoId) {
+      checkRatioParameter(videoId); // Only call the check when videoId changes
+    }
+  }, [isOpen]); // Make sure the effect runs when videoId changes
 
   // Create a portal to render the ModalVideo in the body
   const renderModalVideo = () => {
@@ -21,13 +49,14 @@ export default function VideoPopup({ style, videoId, color, shapeIcon, title, vi
           channel="youtube"
           autoplay
           isOpen={isOpen}
-          videoId={videoId}
+          videoId={videoId.split("?")[0]}  // Correcting this line: removed the comment within JSX
           onClose={() => setOpen(false)}
           style={{
             overlay: {
               zIndex: 9999, // Use a reasonable high z-index value
             },
           }}
+          className={`modal-video ${ratioClass}`} // Add dynamic class here
         />,
         document.body // Render it directly in the body
       )
@@ -62,9 +91,7 @@ export default function VideoPopup({ style, videoId, color, shapeIcon, title, vi
         <span className="button-text wow fadeInUp" data-wow-delay=".9s">
           <a
             onClick={() => setOpen(true)}
-            className={`video-btn ripple video-popup ${
-              color === "fff" ? "white-video-btn" : ""
-            }`}
+            className={`video-btn ripple video-popup ${color === "fff" ? "white-video-btn" : ""}`}
           >
             {shapeIcon ? (
               <span className="custom-video-palyer-icon"></span>

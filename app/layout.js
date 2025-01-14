@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 import AppProvider from "@/context/AppContext";
 import { metadata } from "./siteMetadata";
 import { Kumbh_Sans } from "next/font/google";
+import { useRouter } from 'next/router';
 
 // const lang = localStorage.getItem("lang");
 const kumbh = Kumbh_Sans({
@@ -50,6 +51,22 @@ export default function RootLayout({ children }) {
       setPageName(sessionStorage.getItem('pageName'))
     }
   }, [])
+
+  // Function to get URL parameters
+  function getQueryParams() {
+    const urlParams = new URLSearchParams(window?.location.search);
+    return urlParams;
+  }
+
+  // Check if the user came from Facebook using utm_source=facebook
+  const params = getQueryParams();
+  const utmSource = params.get('utm_source');
+
+  if (utmSource) {
+    localStorage?.setItem('utm_source', utmSource);
+  } else {
+    localStorage?.removeItem('utm_source');
+  }
 
   return (
     <html lang={lang} dir={lang === "ar" ? "rtl" : "ltr"}>

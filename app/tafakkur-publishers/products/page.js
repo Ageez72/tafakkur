@@ -8,6 +8,8 @@ import Link from 'next/link';
 import { useAppContext } from "@/context/AppContext";
 import en from "../../../locales/en.json";
 import ar from "../../../locales/ar.json";
+import { useSearchParams } from 'next/navigation';
+
 
 export default function VersionsListing() {
     const { state } = useAppContext();
@@ -16,6 +18,7 @@ export default function VersionsListing() {
     const [booksData, setBooksData] = useState([]);
     const [agesData, setAgessData] = useState([]);
     const [versionsData, setVersionsData] = useState([]);
+    const searchParams = useSearchParams();
 
     const myHeaders = new Headers();
     myHeaders.append("Accept", "application/json");
@@ -49,11 +52,22 @@ export default function VersionsListing() {
 
     }, [state.LANG])
 
+    useEffect(() => {
+        const version = searchParams.get('version');
+        const ageFromParam = searchParams.get('age_from');
+        const ageToParam = searchParams.get('age_to');
+        
+        if(versionsData.length > 0) {
+            if (version || ageFromParam || ageToParam) {
+                handleFilters(ageFromParam, ageToParam, version);
+            }  
+        }
+    },[versionsData])
     const handleFilters = (age_from, age_to, version) => {
         setLoading(true)
         const fetchData = async () => {
             try {
-                const res = await fetch(`${state.HTTP_URL}books?age_from=${age_from}&age_to=${age_to}&category=${version}`, requestOptions);
+                const res = await fetch(`${state.HTTP_URL}books?age_from=${age_from}&age_to=${age_to}&category=${version || ''}`, requestOptions);
                 if (!res.ok) {
                     throw new Error("Failed to fetch data");
                 }

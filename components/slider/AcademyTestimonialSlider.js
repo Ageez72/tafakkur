@@ -12,7 +12,7 @@ const swiperOptions = {
   spaceBetween: 30,
   speed: 1300,
   loop: true,
-  centeredSlides: true,
+  centeredSlides: false,
   autoplay: {
     delay: 4000,
     disableOnInteraction: false,
@@ -20,9 +20,12 @@ const swiperOptions = {
   pagination: {
     clickable: true,
   },
+  threshold: 5,
 };
 
-export default function AcademyTestimonialSlider({ data }) {  
+export default function AcademyTestimonialSlider({ data }) {
+  console.log(data);
+    
   // Render Swiper component only when data is available
   return (
     <>

@@ -175,6 +175,7 @@ Version: 1.0.0
 html {
   font-size: 13.5px;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -788,6 +789,13 @@ a:hover {
 .square-swiper-pagination .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   transform: rotate(45deg);
   background-color: #5046e4;
+}
+
+.modal-video.height-dem .modal-video-body {
+  max-width: 650px;
+}
+.modal-video.height-dem .modal-video-body .modal-video-inner .modal-video-movie-wrap {
+  padding-bottom: 80vh !important;
 }
 
 @font-face {

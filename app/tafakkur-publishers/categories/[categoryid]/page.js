@@ -1,6 +1,6 @@
 "use client"
 import { useState, useEffect } from "react";
-import { useParams } from "next/navigation";
+import { useParams, useSearchParams } from "next/navigation";
 import Layout from "@/components/layout/Layout";
 import Filter from "@/components/sections/Filter";
 import Shipping from "@/components/sections/Shipping";
@@ -20,6 +20,7 @@ export default function Version() {
     const [agesData, setAgesData] = useState([]);
     // const categoryid = localStorage.getItem("category-id");
     // const categorySlug = localStorage.getItem("category-slug");
+    const searchParams = useSearchParams();
     const myHeaders = new Headers();
     myHeaders.append("Accept", "application/json");
     myHeaders.append("Accept-Language", state.LANG); // Assuming state.LANG is defined
@@ -49,11 +50,23 @@ export default function Version() {
 
     }, [state.LANG])
 
-    const handleFilters = (age) => {
+    useEffect(() => {
+        const ageFromParam = searchParams.get('age_from');
+        const ageToParam = searchParams.get('age_to');
+        
+        if (versionDetails?.category?.id) {
+            handleFilters(ageFromParam, ageToParam);
+            console.log("in 1 field");
+        }  
+    },[versionDetails?.category?.id])
+
+    const handleFilters = (age_from, age_to) => {
         setLoading(true)
+        console.log(versionDetails?.category?.id);
         const fetchData = async () => {
+            
             try {
-                const res = await fetch(`${state.HTTP_URL}books?age=${age}&category=${versionDetails?.category?.id}`, requestOptions);
+                const res = await fetch(`${state.HTTP_URL}books?age_from=${age_from}&age_to=${age_to}&category=${versionDetails?.category?.id}`, requestOptions);
                 if (!res.ok) {
                     throw new Error("Failed to fetch data");
                 }

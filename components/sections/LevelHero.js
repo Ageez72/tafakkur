@@ -36,14 +36,14 @@ export default function LevelHero({ data }) {
                                 <div className="level-content wow fadeInUp" data-wow-delay=".4s">
                                     <h3 className="white-txt mb-4">لعمر <span className="en-txt">{data?.age}</span> سنوات</h3>
                                 </div>
-                                <a href={`https://forms.zohopublic.com/tafakkur/form/20251/formperma/GbxMESJCrgI6bxxn9Ti3S5hYjFwZ3p27F8qsveDmOmY${urlParams}`} target="_blank" rel="noopener noreferrer" className="wow fadeInUp hero-button hero-hover-btn orange-btn" data-wow-delay=".4s">
+                                <a href={`https://forms.zohopublic.com/tafakkur/form/20251/formperma/GbxMESJCrgI6bxxn9Ti3S5hYjFwZ3p27F8qsveDmOmY?utm_source=${localStorage?.getItem("utm_source") || ''}`} target="_blank" rel="noopener noreferrer" className="wow fadeInUp hero-button hero-hover-btn orange-btn" data-wow-delay=".4s">
                                     احجز مقعد ابنك في <span>{data?.next_date && formatDate(data?.next_date)}</span>
                                 </a>
                             </div>
                         </div>
                         <div className="col-lg-5">
                             <div className="hero-image wow fadeInUp" data-wow-delay=".4s">
-                                <Image className="w-100" src={data?.image} alt="hero-img" />
+                                {/* <Image className="w-100" src={data?.image} alt="hero-img" /> */}
                             </div>
                         </div>
                     </div>

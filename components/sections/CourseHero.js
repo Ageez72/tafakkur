@@ -26,7 +26,11 @@ export default function CourseHero({ data }) {
                             <div className="row g-4 align-items-center">
                                 <div className="col-lg-12 mt-0 text-center">
                                     <div className="hero-content">
-                                        <h4 className="wow fadeInUp" data-wow-delay=".4s">الدبلوم التدريبي</h4>
+                                        <h4 className="wow fadeInUp" data-wow-delay=".4s">
+                                            {
+                                                data?.hours_count >= 20 ? "الدبلوم التدريبي" : "الدورة التدريبية"
+                                            }
+                                        </h4>
                                         <h2 className="wow fadeInUp" data-wow-delay=".4s">{data?.title}</h2>
                                         <h3 className="wow fadeInUp mb-3" data-wow-delay=".4s">{data?.desc}</h3>
                                         <p className="mb-3 wow fadeInUp" data-wow-delay=".4s">

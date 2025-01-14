@@ -54,8 +54,10 @@ export default function RootLayout({ children }) {
 
   // Function to get URL parameters
   function getQueryParams() {
-    const urlParams = new URLSearchParams(window?.location.search);
-    return urlParams;
+    if (typeof window !== 'undefined' && typeof window.sessionStorage !== 'undefined') {
+      const urlParams = new URLSearchParams(window?.location.search);
+      return urlParams;
+    }
   }
 
   // Check if the user came from Facebook using utm_source=facebook

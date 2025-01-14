@@ -62,7 +62,7 @@ export default function RootLayout({ children }) {
 
   // Check if the user came from Facebook using utm_source=facebook
   const params = getQueryParams();
-  const utmSource = params.get('utm_source');
+  const utmSource = params?.get('utm_source');
 
   if (utmSource) {
     localStorage?.setItem('utm_source', utmSource);

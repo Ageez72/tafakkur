@@ -54,7 +54,7 @@ export default function RootLayout({ children }) {
 
   // Function to get URL parameters
   function getQueryParams() {
-    if (typeof window !== 'undefined' && typeof window.sessionStorage !== 'undefined') {
+    if (typeof window !== 'undefined' && typeof window.localStorage !== 'undefined') {
       const urlParams = new URLSearchParams(window?.location.search);
       return urlParams;
     }

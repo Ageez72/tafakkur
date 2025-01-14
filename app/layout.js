@@ -65,9 +65,13 @@ export default function RootLayout({ children }) {
   const utmSource = params?.get('utm_source');
 
   if (utmSource) {
-    localStorage?.setItem('utm_source', utmSource);
+    if(typeof window !== 'undefined' && typeof window.localStorage !== 'undefined') {
+      localStorage?.setItem('utm_source', utmSource);
+    }
   } else {
-    localStorage?.removeItem('utm_source');
+    if(typeof window !== 'undefined' && typeof window.localStorage !== 'undefined'){
+      localStorage?.removeItem('utm_source');
+    }
   }
 
   return (
